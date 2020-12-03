@@ -18,8 +18,8 @@ Then, import it using:
 
 ``` go
 import (
-    "github.com/tabeo/stripe-go/v71"
-    "github.com/tabeo/stripe-go/v71/customer"
+    "github.com/tabeo/stripe-go"
+    "github.com/tabeo/stripe-go/customer"
 )
 ```
 
@@ -109,8 +109,8 @@ To use a key, pass it to `API`'s `Init` function:
 ```go
 
 import (
-	"github.com/tabeo/stripe-go/v71"
-	"github.com/tabeo/stripe-go/v71/client"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/client"
 )
 
 stripe := &client.API{}
@@ -131,8 +131,8 @@ import (
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/urlfetch"
 
-	"github.com/tabeo/stripe-go/v71"
-	"github.com/tabeo/stripe-go/v71/client"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/client"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -166,8 +166,8 @@ client.
 
 ```go
 import (
-	"github.com/tabeo/stripe-go/v71"
-	"github.com/tabeo/stripe-go/v71/$resource$"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/$resource$"
 )
 
 // Setup
@@ -206,8 +206,8 @@ individual key.
 
 ```go
 import (
-	"github.com/tabeo/stripe-go/v71"
-	"github.com/tabeo/stripe-go/v71/client"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/client"
 )
 
 // Setup
@@ -249,8 +249,8 @@ with `MaxNetworkRetries`:
 
 ```go
 import (
-	"github.com/tabeo/stripe-go/v71"
-	"github.com/tabeo/stripe-go/v71/client"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/client"
 )
 
 config := &stripe.BackendConfig{

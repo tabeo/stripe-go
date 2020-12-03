@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/tabeo/stripe-go/v71/form"
+	"github.com/tabeo/stripe-go/form"
 )
 
 //

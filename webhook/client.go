@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tabeo/stripe-go/v71"
+	"github.com/tabeo/stripe-go"
 )
 
 //

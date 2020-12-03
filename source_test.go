@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	assert "github.com/stretchr/testify/require"
-	"github.com/tabeo/stripe-go/v71/form"
+	"github.com/tabeo/stripe-go/form"
 )
 
 func TestSourceObjectParams_AppendTo(t *testing.T) {

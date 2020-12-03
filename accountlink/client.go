@@ -6,7 +6,7 @@ package accountlink
 import (
 	"net/http"
 
-	stripe "github.com/tabeo/stripe-go/v71"
+	stripe "github.com/tabeo/stripe-go"
 )
 
 // Client is used to invoke APIs related to account links.

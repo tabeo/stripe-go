@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"path/filepath"
 
-	"github.com/tabeo/stripe-go/v71/form"
+	"github.com/tabeo/stripe-go/form"
 )
 
 // FilePurpose is the purpose of a particular file.

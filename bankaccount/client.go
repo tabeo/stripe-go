@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	stripe "github.com/tabeo/stripe-go/v71"
-	"github.com/tabeo/stripe-go/v71/form"
+	stripe "github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/form"
 )
 
 // Client is used to invoke /bank_accounts APIs.

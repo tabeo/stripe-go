@@ -4,7 +4,7 @@ package mandate
 import (
 	"net/http"
 
-	stripe "github.com/tabeo/stripe-go/v71"
+	stripe "github.com/tabeo/stripe-go"
 )
 
 // Client is used to invoke mandates APIs.

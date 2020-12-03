@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/tabeo/stripe-go/v71/form"
+	"github.com/tabeo/stripe-go/form"
 )
 
 // PaymentSourceType consts represent valid payment sources.

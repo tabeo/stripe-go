@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	assert "github.com/stretchr/testify/require"
-	stripe "github.com/tabeo/stripe-go/v71"
-	_ "github.com/tabeo/stripe-go/v71/testing"
+	stripe "github.com/tabeo/stripe-go"
+	_ "github.com/tabeo/stripe-go/testing"
 )
 
 func TestTaxIDDel(t *testing.T) {

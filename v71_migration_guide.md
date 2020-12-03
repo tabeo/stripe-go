@@ -17,8 +17,8 @@ Should now also include a major version:
 
 ``` go
 import (
-    "github.com/tabeo/stripe-go/v71"
-    "github.com/tabeo/stripe-go/v71/customer"
+    "github.com/tabeo/stripe-go"
+    "github.com/tabeo/stripe-go/customer"
 )
 ```
 
