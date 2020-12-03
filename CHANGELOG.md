@@ -1,66 +1,66 @@
 # Changelog
 
 ## 71.7.0 - 2020-04-29
-* [#1087](https://github.com/stripe/stripe-go/pull/1087) Add support for Brazilian tax ids on `TaxID`
-* [#1085](https://github.com/stripe/stripe-go/pull/1085) Add `Object` on `BankAccount`
-* [#1065](https://github.com/stripe/stripe-go/pull/1065) Adding support for the `Price` resource and APIs
+* [#1087](https://github.com/tabeo/stripe-go/pull/1087) Add support for Brazilian tax ids on `TaxID`
+* [#1085](https://github.com/tabeo/stripe-go/pull/1085) Add `Object` on `BankAccount`
+* [#1065](https://github.com/tabeo/stripe-go/pull/1065) Adding support for the `Price` resource and APIs
 
 ## 71.6.0 - 2020-04-23
-* [#1083](https://github.com/stripe/stripe-go/pull/1083) Add support for `JCBPayments` and `CardIssuing` as a `Capability`
-* [#1082](https://github.com/stripe/stripe-go/pull/1082) Add support for expandable `CVC` and `Number` on Issuing `Card`
+* [#1083](https://github.com/tabeo/stripe-go/pull/1083) Add support for `JCBPayments` and `CardIssuing` as a `Capability`
+* [#1082](https://github.com/tabeo/stripe-go/pull/1082) Add support for expandable `CVC` and `Number` on Issuing `Card`
 
 ## 71.5.0 - 2020-04-22
-* [#1080](https://github.com/stripe/stripe-go/pull/1080) Remove spurious newline in logs
+* [#1080](https://github.com/tabeo/stripe-go/pull/1080) Remove spurious newline in logs
 
 ## 71.4.0 - 2020-04-22
-* [#1079](https://github.com/stripe/stripe-go/pull/1079) Add support for `Coupon` when for subscriptions on Checkout
+* [#1079](https://github.com/tabeo/stripe-go/pull/1079) Add support for `Coupon` when for subscriptions on Checkout
 
 ## 71.3.0 - 2020-04-22
-* [#1078](https://github.com/stripe/stripe-go/pull/1078) Add missing error codes such as `ErrorCodeCardDeclinedRateLimitExceeded`
-* [#1063](https://github.com/stripe/stripe-go/pull/1063) Add support for the `BillingPortal` namespace and the `Session` API and resource
+* [#1078](https://github.com/tabeo/stripe-go/pull/1078) Add missing error codes such as `ErrorCodeCardDeclinedRateLimitExceeded`
+* [#1063](https://github.com/tabeo/stripe-go/pull/1063) Add support for the `BillingPortal` namespace and the `Session` API and resource
 
 ## 71.2.0 - 2020-04-21
-* [#1076](https://github.com/stripe/stripe-go/pull/1076) Add `Deleted` on `Invoice`
+* [#1076](https://github.com/tabeo/stripe-go/pull/1076) Add `Deleted` on `Invoice`
 
 ## 71.1.0 - 2020-04-17
-* [#1074](https://github.com/stripe/stripe-go/pull/1074) Add `CardholderName` to `ChargePaymentMethodDetailsCardPresent` on `Charge`
-* [#1075](https://github.com/stripe/stripe-go/pull/1075) Add new enum values for `AccountCompanyStructure` on `Account`
+* [#1074](https://github.com/tabeo/stripe-go/pull/1074) Add `CardholderName` to `ChargePaymentMethodDetailsCardPresent` on `Charge`
+* [#1075](https://github.com/tabeo/stripe-go/pull/1075) Add new enum values for `AccountCompanyStructure` on `Account`
 
 ## 71.0.0 - 2020-04-17
-Version 71 of stripe-go contains some major changes. Many of them are breaking, but only in minor ways. We've written [a migration guide](https://github.com/stripe/stripe-go/blob/master/v71_migration_guide.md) with more details to help with the upgrade.
+Version 71 of stripe-go contains some major changes. Many of them are breaking, but only in minor ways. We've written [a migration guide](https://github.com/tabeo/stripe-go/blob/master/v71_migration_guide.md) with more details to help with the upgrade.
 
-* [#1052](https://github.com/stripe/stripe-go/pull/1052) Remove all beta features from Issuing APIs
-* [#1054](https://github.com/stripe/stripe-go/pull/1054) Make API response accessible on returned API structs
-* [#1061](https://github.com/stripe/stripe-go/pull/1061) Start using Go Modules
-* [#1068](https://github.com/stripe/stripe-go/pull/1068) Multiple breaking API changes
+* [#1052](https://github.com/tabeo/stripe-go/pull/1052) Remove all beta features from Issuing APIs
+* [#1054](https://github.com/tabeo/stripe-go/pull/1054) Make API response accessible on returned API structs
+* [#1061](https://github.com/tabeo/stripe-go/pull/1061) Start using Go Modules
+* [#1068](https://github.com/tabeo/stripe-go/pull/1068) Multiple breaking API changes
   * `PaymentIntent` is now expandable on `Charge`
   * `Percentage` was removed as a filter when listing `TaxRate`
   * Removed `RenewalInterval` on `SubscriptionSchedule`
   * Removed `Country` and `RoutingNumber` from `ChargePaymentMethodDetailsAcssDebit`
-* [#1069](https://github.com/stripe/stripe-go/pull/1069) Default number of network retries to 2
-* [#1070](https://github.com/stripe/stripe-go/pull/1070) Clean up logging for next major
+* [#1069](https://github.com/tabeo/stripe-go/pull/1069) Default number of network retries to 2
+* [#1070](https://github.com/tabeo/stripe-go/pull/1070) Clean up logging for next major
 
 ## 70.15.0 - 2020-04-14
-* [#1066](https://github.com/stripe/stripe-go/pull/1066) Add support for `SecondaryColor` on `Account`
+* [#1066](https://github.com/tabeo/stripe-go/pull/1066) Add support for `SecondaryColor` on `Account`
 
 ## 70.14.0 - 2020-04-13
-* [#1062](https://github.com/stripe/stripe-go/pull/1062) Add `Description` on `WebhookEndpoint`
+* [#1062](https://github.com/tabeo/stripe-go/pull/1062) Add `Description` on `WebhookEndpoint`
 
 ## 70.13.0 - 2020-04-10
-* [#1060](https://github.com/stripe/stripe-go/pull/1060) Add support for `CancellationReason` on Issuing `Card`
-* [#1058](https://github.com/stripe/stripe-go/pull/1058) Add support for `TaxIDTypeSGGST` on `TaxId`
+* [#1060](https://github.com/tabeo/stripe-go/pull/1060) Add support for `CancellationReason` on Issuing `Card`
+* [#1058](https://github.com/tabeo/stripe-go/pull/1058) Add support for `TaxIDTypeSGGST` on `TaxId`
 
 ## 70.12.0 - 2020-04-09
-* [#1057](https://github.com/stripe/stripe-go/pull/1057) Add missing properties on `Review`
+* [#1057](https://github.com/tabeo/stripe-go/pull/1057) Add missing properties on `Review`
 
 ## 70.11.0 - 2020-04-03
-* [#1056](https://github.com/stripe/stripe-go/pull/1056) Add `CalculatedStatementDescriptor` on `Charge`
+* [#1056](https://github.com/tabeo/stripe-go/pull/1056) Add `CalculatedStatementDescriptor` on `Charge`
 
 ## 70.10.0 - 2020-03-30
-* [#1053](https://github.com/stripe/stripe-go/pull/1053) Add `AccountCapabilityCardIssuing` as a `Capability`
+* [#1053](https://github.com/tabeo/stripe-go/pull/1053) Add `AccountCapabilityCardIssuing` as a `Capability`
 
 ## 70.9.0 - 2020-03-26
-* [#1050](https://github.com/stripe/stripe-go/pull/1050) Multiple API changes for Issuing
+* [#1050](https://github.com/tabeo/stripe-go/pull/1050) Multiple API changes for Issuing
   * Add support for `SpendingControls` on `Card` and `Cardholder`
   * Add new values for `Reason` on `Authorization`
   * Add new value for `Type` on `Cardholder`
@@ -68,121 +68,121 @@ Version 71 of stripe-go contains some major changes. Many of them are breaking, 
   * Mark many classes and other fields as deprecated for the next major
 
 ## 70.8.0 - 2020-03-24
-* [#1049](https://github.com/stripe/stripe-go/pull/1049) Add support for `PauseCollection` on `Subscription`
+* [#1049](https://github.com/tabeo/stripe-go/pull/1049) Add support for `PauseCollection` on `Subscription`
 
 ## 70.7.0 - 2020-03-23
-* [#1048](https://github.com/stripe/stripe-go/pull/1048) Add new capabilities for AU Becs Debit and tax reporting
+* [#1048](https://github.com/tabeo/stripe-go/pull/1048) Add new capabilities for AU Becs Debit and tax reporting
 
 ## 70.6.0 - 2020-03-20
-* [#1046](https://github.com/stripe/stripe-go/pull/1046) Add new fields to Issuing `Card` and `Authorization`
+* [#1046](https://github.com/tabeo/stripe-go/pull/1046) Add new fields to Issuing `Card` and `Authorization`
 
 ## 70.5.0 - 2020-03-13
-* [#1044](https://github.com/stripe/stripe-go/pull/1044) Multiple changes for Issuing APIs
+* [#1044](https://github.com/tabeo/stripe-go/pull/1044) Multiple changes for Issuing APIs
   * Rename `Speed` to `Service` on Issuing `Card`
   * Rename `WalletProvider` to `Wallet` and `AddressZipCheck` to `AddressPostalCodeCheck` on Issuing `Authorization`
   * Mark `IsDefault` as deprecated on Issuing `Cardholder`
 
 ## 70.4.0 - 2020-03-12
-* [#1043](https://github.com/stripe/stripe-go/pull/1043) Add support for `Shipping` and `ShippingAddressCollection` on Checkout `Session`
+* [#1043](https://github.com/tabeo/stripe-go/pull/1043) Add support for `Shipping` and `ShippingAddressCollection` on Checkout `Session`
 
 ## 70.3.0 - 2020-03-12
-* [#1042](https://github.com/stripe/stripe-go/pull/1042) Add support for `ThreeDSecure` on Issuing `Authorization`
+* [#1042](https://github.com/tabeo/stripe-go/pull/1042) Add support for `ThreeDSecure` on Issuing `Authorization`
 
 ## 70.2.0 - 2020-03-04
-* [#1041](https://github.com/stripe/stripe-go/pull/1041) Add new reason values and `ExpiryCheck` for Issuing `authorization
+* [#1041](https://github.com/tabeo/stripe-go/pull/1041) Add new reason values and `ExpiryCheck` for Issuing `authorization
 
 ## 70.1.0 - 2020-03-04
-* [#1040](https://github.com/stripe/stripe-go/pull/1040) Add support for `Errors` in `Requirements` on `Account`, `Capability` and `Person`
+* [#1040](https://github.com/tabeo/stripe-go/pull/1040) Add support for `Errors` in `Requirements` on `Account`, `Capability` and `Person`
 
 ## 70.0.0 - 2020-03-03
-* [#1039](https://github.com/stripe/stripe-go/pull/1039) Multiple API changes:
+* [#1039](https://github.com/tabeo/stripe-go/pull/1039) Multiple API changes:
   * Move to latest API version `2020-03-02`
   * Add support for `NextInvoiceSequence` on `Customer`
 
 ## 69.4.0 - 2020-02-28
-* [#1038](https://github.com/stripe/stripe-go/pull/1038) Add `TaxIDTypeMYSST` for `TaxId`
+* [#1038](https://github.com/tabeo/stripe-go/pull/1038) Add `TaxIDTypeMYSST` for `TaxId`
 
 ## 69.3.0 - 2020-02-24
-* [#1037](https://github.com/stripe/stripe-go/pull/1037) Add new enum values for `IssuingDisputeReason`
+* [#1037](https://github.com/tabeo/stripe-go/pull/1037) Add new enum values for `IssuingDisputeReason`
 
 ## 69.2.0 - 2020-02-24
-* [#1036](https://github.com/stripe/stripe-go/pull/1036) Add support for listing Checkout `Session` and passing tax rate information
+* [#1036](https://github.com/tabeo/stripe-go/pull/1036) Add support for listing Checkout `Session` and passing tax rate information
 
 ## 69.1.0 - 2020-02-21
-* [#1035](https://github.com/stripe/stripe-go/pull/1035) Add support for `ProrationBehavior` on `SubscriptionSchedule`
-* [#1034](https://github.com/stripe/stripe-go/pull/1034) Add support for `Timezone` on `ReportRun`
+* [#1035](https://github.com/tabeo/stripe-go/pull/1035) Add support for `ProrationBehavior` on `SubscriptionSchedule`
+* [#1034](https://github.com/tabeo/stripe-go/pull/1034) Add support for `Timezone` on `ReportRun`
 
 ## 69.0.0 - 2020-02-20
-* [#1033](https://github.com/stripe/stripe-go/pull/1033) Make `Subscription` expandable on `Invoice`
+* [#1033](https://github.com/tabeo/stripe-go/pull/1033) Make `Subscription` expandable on `Invoice`
 
 ## 68.20.0 - 2020-02-12
-* [#1029](https://github.com/stripe/stripe-go/pull/1029) Add support for `Amount` in `CheckoutSessionPaymentIntentDataTransferDataParams`
+* [#1029](https://github.com/tabeo/stripe-go/pull/1029) Add support for `Amount` in `CheckoutSessionPaymentIntentDataTransferDataParams`
 
 ## 68.19.0 - 2020-02-10
-* [#1027](https://github.com/stripe/stripe-go/pull/1027) Add new constants for `TaxIDType`
-* [#1028](https://github.com/stripe/stripe-go/pull/1028) Add support for `StatementDescriptorSuffix` on Checkout `Session`
+* [#1027](https://github.com/tabeo/stripe-go/pull/1027) Add new constants for `TaxIDType`
+* [#1028](https://github.com/tabeo/stripe-go/pull/1028) Add support for `StatementDescriptorSuffix` on Checkout `Session`
 
 ## 68.18.0 - 2020-02-05
-* [#1026](https://github.com/stripe/stripe-go/pull/1026) Multiple changes on the `Balance` resource:
+* [#1026](https://github.com/tabeo/stripe-go/pull/1026) Multiple changes on the `Balance` resource:
   * Add support for `ConnectReserved`
   * Add support for `SourceTypes` for a given type of balance.
   * Add support for FPX balance as a constant.
 
 ## 68.17.0 - 2020-02-03
-* [#1024](https://github.com/stripe/stripe-go/pull/1024) Add `FilePurposeAdditionalVerification` and `FilePurposeBusinessIcon` on `File`
-* [#1018](https://github.com/stripe/stripe-go/pull/1018) Add support for `ErrorOnRequiresAction` on `PaymentIntent`
+* [#1024](https://github.com/tabeo/stripe-go/pull/1024) Add `FilePurposeAdditionalVerification` and `FilePurposeBusinessIcon` on `File`
+* [#1018](https://github.com/tabeo/stripe-go/pull/1018) Add support for `ErrorOnRequiresAction` on `PaymentIntent`
 
 ## 68.16.0 - 2020-01-31
-* [#1023](https://github.com/stripe/stripe-go/pull/1023) Add support for `TaxIDTypeTHVAT` and `TaxIDTypeTWVAT` on `TaxId`
+* [#1023](https://github.com/tabeo/stripe-go/pull/1023) Add support for `TaxIDTypeTHVAT` and `TaxIDTypeTWVAT` on `TaxId`
 
 ## 68.15.0 - 2020-01-30
-* [#1022](https://github.com/stripe/stripe-go/pull/1022) Add support for `Structure` on `Account`
+* [#1022](https://github.com/tabeo/stripe-go/pull/1022) Add support for `Structure` on `Account`
 
 ## 68.14.0 - 2020-01-28
-* [#1021](https://github.com/stripe/stripe-go/pull/1021) Add support for `TaxIDTypeESCIF` on `TaxId`
+* [#1021](https://github.com/tabeo/stripe-go/pull/1021) Add support for `TaxIDTypeESCIF` on `TaxId`
 
 ## 68.13.0 - 2020-01-24
-* [#1019](https://github.com/stripe/stripe-go/pull/1019) Add support for `Shipping.Speed` and `Shipping.TrackingURL` on `IssuingCard`
+* [#1019](https://github.com/tabeo/stripe-go/pull/1019) Add support for `Shipping.Speed` and `Shipping.TrackingURL` on `IssuingCard`
 
 ## 68.12.0 - 2020-01-23
-* [#1017](https://github.com/stripe/stripe-go/pull/1017) Add new values for `TaxIDType` and fix `TaxIDTypeCHVAT`
-* [#1015](https://github.com/stripe/stripe-go/pull/1015) Replace duplicate code in GetBackend method
+* [#1017](https://github.com/tabeo/stripe-go/pull/1017) Add new values for `TaxIDType` and fix `TaxIDTypeCHVAT`
+* [#1015](https://github.com/tabeo/stripe-go/pull/1015) Replace duplicate code in GetBackend method
 
 ## 68.11.0 - 2020-01-17
-* [#1014](https://github.com/stripe/stripe-go/pull/1014) Add `Metadata` support on Checkout `Session`
+* [#1014](https://github.com/tabeo/stripe-go/pull/1014) Add `Metadata` support on Checkout `Session`
 
 ## 68.10.0 - 2020-01-15
-* [#1012](https://github.com/stripe/stripe-go/pull/1012) Adds `PendingUpdate` to `Subscription`
+* [#1012](https://github.com/tabeo/stripe-go/pull/1012) Adds `PendingUpdate` to `Subscription`
 
 ## 68.9.0 - 2020-01-14
-* [#1013](https://github.com/stripe/stripe-go/pull/1013) Add support for `CreditNoteLineItem`
+* [#1013](https://github.com/tabeo/stripe-go/pull/1013) Add support for `CreditNoteLineItem`
 
 ## 68.8.0 - 2020-01-08
-* [#1011](https://github.com/stripe/stripe-go/pull/1011) Add support for `InvoiceItem` and fix `Livemode` on `InvoiceLine`
+* [#1011](https://github.com/tabeo/stripe-go/pull/1011) Add support for `InvoiceItem` and fix `Livemode` on `InvoiceLine`
 
 ## 68.7.0 - 2020-01-07
-* [#1008](https://github.com/stripe/stripe-go/pull/1008) Add `ReportingCategory` to `BalanceTransaction`
+* [#1008](https://github.com/tabeo/stripe-go/pull/1008) Add `ReportingCategory` to `BalanceTransaction`
 
 ## 68.6.0 - 2020-01-06
-* [#1009](https://github.com/stripe/stripe-go/pull/1009) Add constant for `TaxIDTypeSGUEN` on `TaxId`
+* [#1009](https://github.com/tabeo/stripe-go/pull/1009) Add constant for `TaxIDTypeSGUEN` on `TaxId`
 
 ## 68.5.0 - 2020-01-03
-* [#1007](https://github.com/stripe/stripe-go/pull/1007) Add support for `SpendingLimitsCurrency` on Issuing `Card` and `Cardholder`
+* [#1007](https://github.com/tabeo/stripe-go/pull/1007) Add support for `SpendingLimitsCurrency` on Issuing `Card` and `Cardholder`
 
 ## 68.4.0 - 2019-12-20
-* [#1006](https://github.com/stripe/stripe-go/pull/1006) Adds `ExecutivesProvided` to `Account`
+* [#1006](https://github.com/tabeo/stripe-go/pull/1006) Adds `ExecutivesProvided` to `Account`
 
 ## 68.3.0 - 2019-12-19
-* [#1005](https://github.com/stripe/stripe-go/pull/1005) Add `Metadata` and `Livemode` to Terminal `Reader` and `Location'
+* [#1005](https://github.com/tabeo/stripe-go/pull/1005) Add `Metadata` and `Livemode` to Terminal `Reader` and `Location'
 
 ## 68.2.0 - 2019-12-09
-* [#1002](https://github.com/stripe/stripe-go/pull/1002) Add support for AU BECS Debit on PaymentMethod
+* [#1002](https://github.com/tabeo/stripe-go/pull/1002) Add support for AU BECS Debit on PaymentMethod
 
 ## 68.1.0 - 2019-12-04
-* [#1001](https://github.com/stripe/stripe-go/pull/1001) Add support for `Network` on `Charge`
+* [#1001](https://github.com/tabeo/stripe-go/pull/1001) Add support for `Network` on `Charge`
 
 ## 68.0.0 - 2019-12-03
-* [#1000](https://github.com/stripe/stripe-go/pull/1000) Multiple breaking changes:
+* [#1000](https://github.com/tabeo/stripe-go/pull/1000) Multiple breaking changes:
   * Pin to API version `2019-12-03`
   * Rename `InvoiceBillingStatus` to `InvoiceStatus` for consistency
   * Remove typo-ed field `OutOfBankdAmount` on `CreditNote`
@@ -190,75 +190,75 @@ Version 71 of stripe-go contains some major changes. Many of them are breaking, 
   * Remove `OperatorAccount` on `TerminalLocationListParams`
 
 ## 67.10.0 - 2019-12-02
-* [#999](https://github.com/stripe/stripe-go/pull/999) Add support for `Status` filter when listing `Invoice`s.
+* [#999](https://github.com/tabeo/stripe-go/pull/999) Add support for `Status` filter when listing `Invoice`s.
 
 ## 67.9.0 - 2019-11-26
-* [#997](https://github.com/stripe/stripe-go/pull/997) Add new refund reason `RefundReasonExpiredUncapturedCharge`
+* [#997](https://github.com/tabeo/stripe-go/pull/997) Add new refund reason `RefundReasonExpiredUncapturedCharge`
 
 ## 67.8.0 - 2019-11-26
-* [#998](https://github.com/stripe/stripe-go/pull/998) Add support for `CreditNote` preview
+* [#998](https://github.com/tabeo/stripe-go/pull/998) Add support for `CreditNote` preview
 
 ## 67.7.0 - 2019-11-25
-* [#996](https://github.com/stripe/stripe-go/pull/996) Add support for `OutOfBandAmount` on `CreditNote` creation
-* [#995](https://github.com/stripe/stripe-go/pull/995) Fix comment typos
+* [#996](https://github.com/tabeo/stripe-go/pull/996) Add support for `OutOfBandAmount` on `CreditNote` creation
+* [#995](https://github.com/tabeo/stripe-go/pull/995) Fix comment typos
 
 ## 67.6.0 - 2019-11-22
-* [#994](https://github.com/stripe/stripe-go/pull/994) Support for the `now` on `StartDate` on Subscription Schedule creation
+* [#994](https://github.com/tabeo/stripe-go/pull/994) Support for the `now` on `StartDate` on Subscription Schedule creation
 
 ## 67.5.0 - 2019-11-21
-* [#993](https://github.com/stripe/stripe-go/pull/993) Add `PaymentIntent` filter when listing `Dispute`s
+* [#993](https://github.com/tabeo/stripe-go/pull/993) Add `PaymentIntent` filter when listing `Dispute`s
 
 ## 67.4.1 - 2019-11-19
-* [#991](https://github.com/stripe/stripe-go/pull/991) Add missing constant for PaymentMethod of type FPX
+* [#991](https://github.com/tabeo/stripe-go/pull/991) Add missing constant for PaymentMethod of type FPX
 
 ## 67.4.0 - 2019-11-18
-* [#989](https://github.com/stripe/stripe-go/pull/989) Add support for `ViolatedAuthorizationControls` on Issuing `Authorization`
+* [#989](https://github.com/tabeo/stripe-go/pull/989) Add support for `ViolatedAuthorizationControls` on Issuing `Authorization`
 
 ## 67.3.0 - 2019-11-07
-* [#988](https://github.com/stripe/stripe-go/pull/988) Add `Company` and `Individual` to Issuing `Cardholder`
+* [#988](https://github.com/tabeo/stripe-go/pull/988) Add `Company` and `Individual` to Issuing `Cardholder`
 
 ## 67.2.0 - 2019-11-06
-* [#985](https://github.com/stripe/stripe-go/pull/985) Multiple API changes
+* [#985](https://github.com/tabeo/stripe-go/pull/985) Multiple API changes
   * Add `Disputed` to `Charge`
   * Add `PaymentIntent` to `Refund` and `Dispute`
   * Add `Charge` to `DisputeListParams`
   * Add `PaymentIntent` to `RefundListParams` and `RefundParams`
 
 ## 67.1.0 - 2019-11-06
-* [#986](https://github.com/stripe/stripe-go/pull/986) Add support for iDEAL and SEPA debit on `PaymentMethod`
+* [#986](https://github.com/tabeo/stripe-go/pull/986) Add support for iDEAL and SEPA debit on `PaymentMethod`
 
 ## 67.0.0 - 2019-11-05
-* [#987](https://github.com/stripe/stripe-go/pull/987) Move to the latest API version and add new changes
+* [#987](https://github.com/tabeo/stripe-go/pull/987) Move to the latest API version and add new changes
   * Move to API version `2019-11-05`
   * Add `DefaultSettings` on `SubscritionSchedule`
   * Remove `BillingThresholds`, `CollectionMethod`, `DefaultPaymentMethod` and `DefaultSource` and `invoice_settings` from `SubscriptionSchedule`
   * `OffSession` on `PaymentIntent` is now always a boolean
 
 ## 66.3.0 - 2019-11-04
-* [#984](https://github.com/stripe/stripe-go/pull/984) Add support for `UseStripeSDK` on `PaymentIntent` create and confirm
+* [#984](https://github.com/tabeo/stripe-go/pull/984) Add support for `UseStripeSDK` on `PaymentIntent` create and confirm
 
 ## 66.2.0 - 2019-11-04
-* [#983](https://github.com/stripe/stripe-go/pull/983) Add support for cloning saved PaymentMethods
-* [#980](https://github.com/stripe/stripe-go/pull/980) Improve docs for ephemeral keys
+* [#983](https://github.com/tabeo/stripe-go/pull/983) Add support for cloning saved PaymentMethods
+* [#980](https://github.com/tabeo/stripe-go/pull/980) Improve docs for ephemeral keys
 
 ## 66.1.1 - 2019-10-24
-* [#978](https://github.com/stripe/stripe-go/pull/978) Properly pass `Type` in `PaymentIntentPaymentMethodOptionsCardInstallmentsPlanParams`
+* [#978](https://github.com/tabeo/stripe-go/pull/978) Properly pass `Type` in `PaymentIntentPaymentMethodOptionsCardInstallmentsPlanParams`
   * Note that this is technically a breaking change, however we've chosen to release it as a patch version as this shipped yesterday and is a new feature
-* [#977](https://github.com/stripe/stripe-go/pull/977) Contributor Convenant
+* [#977](https://github.com/tabeo/stripe-go/pull/977) Contributor Convenant
 
 ## 66.1.0 - 2019-10-23
-* [#974](https://github.com/stripe/stripe-go/pull/974) Add support for installments on `PaymentIntent` and `Charge`
-* [#975](https://github.com/stripe/stripe-go/pull/975) Add support for `PendingInvoiceItemInterval` on `Subscription`
-* [#976](https://github.com/stripe/stripe-go/pull/976) Add `TaxIDTypeMXRFC` constant to `TaxIDType`
+* [#974](https://github.com/tabeo/stripe-go/pull/974) Add support for installments on `PaymentIntent` and `Charge`
+* [#975](https://github.com/tabeo/stripe-go/pull/975) Add support for `PendingInvoiceItemInterval` on `Subscription`
+* [#976](https://github.com/tabeo/stripe-go/pull/976) Add `TaxIDTypeMXRFC` constant to `TaxIDType`
 
 ## 66.0.0 - 2019-10-18
-* [#973](https://github.com/stripe/stripe-go/pull/973) Multiple breaking changes
+* [#973](https://github.com/tabeo/stripe-go/pull/973) Multiple breaking changes
   * Pin to the latest API version `2019-10-17`
   * Remove `RenewalBehavior` on `SubscriptionSchedule`
   * Remove `RenewalBehavior` and `RenewalInterval` as parameters on `SubscriptionSchedule`
 
 ## 65.2.0 - 2019-10-17
-* [#972](https://github.com/stripe/stripe-go/pull/972) Various API changes
+* [#972](https://github.com/tabeo/stripe-go/pull/972) Various API changes
   * `Requirements` on Issuing `Cardholder`
   * `PaymentMethodDetails.AuBecsDebit.Mandate` on `Charge`
   * `PaymentBehavior` on `Subscription` creation can now take the value `pending_if_incomplete`
@@ -267,15 +267,15 @@ Version 71 of stripe-go contains some major changes. Many of them are breaking, 
   * New values for `TaxIDType`
 
 ## 65.1.1 - 2019-10-11
-* [#970](https://github.com/stripe/stripe-go/pull/970) Properly deserialize `Fulfilled` on `StatusTransitions` in the `order` package
+* [#970](https://github.com/tabeo/stripe-go/pull/970) Properly deserialize `Fulfilled` on `StatusTransitions` in the `order` package
 
 ## 65.1.0 - 2019-10-09
-* [#969](https://github.com/stripe/stripe-go/pull/969) Add `DeviceType` filter when listing Terminal `Reader`s
+* [#969](https://github.com/tabeo/stripe-go/pull/969) Add `DeviceType` filter when listing Terminal `Reader`s
 
 ## 65.0.0 - 2019-10-09
-* [#951](https://github.com/stripe/stripe-go/pull/951) Move to API version [`2019-10-08`](https://stripe.com/docs/upgrades#2019-10-08) and other changes
-  * [#950](https://github.com/stripe/stripe-go/pull/950) Remove lossy "MarshalJSON" implementations
-  * [#962](https://github.com/stripe/stripe-go/pull/962) Removed deprecated properties and most todos
+* [#951](https://github.com/tabeo/stripe-go/pull/951) Move to API version [`2019-10-08`](https://stripe.com/docs/upgrades#2019-10-08) and other changes
+  * [#950](https://github.com/tabeo/stripe-go/pull/950) Remove lossy "MarshalJSON" implementations
+  * [#962](https://github.com/tabeo/stripe-go/pull/962) Removed deprecated properties and most todos
     * Removed `GetBalanceTransaction` and `List` from the `balance` package. Prefer using `Get` and `List` in the `balancetransaction` package.
     * Removed `ApplicationFee` from the `charge` and `paymentintent` packages. Prefer using `ApplicationFeeAmount`.
     * Removed `TaxInfo` and related fields from the `customer` packager. Prefer using the `customertaxid` package.
@@ -285,96 +285,96 @@ Version 71 of stripe-go contains some major changes. Many of them are breaking, 
     * Removed the `SubscriptionBilling` type from the `sub` package. Prefer using `SubscriptionCollectionMethod`.
     * Removed deprecated constants for `PaymentIntentConfirmationMethod` in `paymentintent` package.
     * Removed `OperatorAccount` from Terminal APIs.
-  * [#960](https://github.com/stripe/stripe-go/pull/960) Remove `issuerfraudrecord` package. Prefer using `earlyfraudwarning`
-  * [#968](https://github.com/stripe/stripe-go/pull/968) Rename `AccountOpener` to `Representative` and update to latest API version
+  * [#960](https://github.com/tabeo/stripe-go/pull/960) Remove `issuerfraudrecord` package. Prefer using `earlyfraudwarning`
+  * [#968](https://github.com/tabeo/stripe-go/pull/968) Rename `AccountOpener` to `Representative` and update to latest API version
 
 ## 64.1.0 - 2019-10-09
-* [#967](https://github.com/stripe/stripe-go/pull/967) Add `Get` method to `OrderReturn`
+* [#967](https://github.com/tabeo/stripe-go/pull/967) Add `Get` method to `OrderReturn`
 
 ## 64.0.0 - 2019-10-08
-* ~[#968](https://github.com/stripe/stripe-go/pull/968) Update to latest API version [`2019-10-08`](https://stripe.com/docs/upgrades#2019-10-08)~
+* ~[#968](https://github.com/tabeo/stripe-go/pull/968) Update to latest API version [`2019-10-08`](https://stripe.com/docs/upgrades#2019-10-08)~
   * **Note:** This release is actually a no-op as we failed to merge the changes. Please use 65.0.0 instead.
 
 ## 63.5.0 - 2019-10-03
-* [#955](https://github.com/stripe/stripe-go/pull/955) Add FPX `PaymentMethod` Support
-* [#966](https://github.com/stripe/stripe-go/pull/966) Add the `Account` field to `BankAccount`
+* [#955](https://github.com/tabeo/stripe-go/pull/955) Add FPX `PaymentMethod` Support
+* [#966](https://github.com/tabeo/stripe-go/pull/966) Add the `Account` field to `BankAccount`
 
 ## 63.4.0 - 2019-09-30
-* [#952](https://github.com/stripe/stripe-go/pull/952) Add AU BECS Debit Support
+* [#952](https://github.com/tabeo/stripe-go/pull/952) Add AU BECS Debit Support
 
 ## 63.3.0 - 2019-09-30
-* [#964](https://github.com/stripe/stripe-go/pull/964) Add support for `Status` and `Location` filters when listing `Reader`s
+* [#964](https://github.com/tabeo/stripe-go/pull/964) Add support for `Status` and `Location` filters when listing `Reader`s
 
 ## 63.2.2 - 2019-09-26
-* [#963](https://github.com/stripe/stripe-go/pull/963) Update `SourceSourceOrder` `Items` field to fix unmarshalling errors
+* [#963](https://github.com/tabeo/stripe-go/pull/963) Update `SourceSourceOrder` `Items` field to fix unmarshalling errors
 
 ## 63.2.1 - 2019-09-25
-* [#961](https://github.com/stripe/stripe-go/pull/961) Properly tag `Customer` as deprecated in `PaymentMethodDetachParams`
+* [#961](https://github.com/tabeo/stripe-go/pull/961) Properly tag `Customer` as deprecated in `PaymentMethodDetachParams`
 
 ## 63.2.0 - 2019-09-25
-* [#959](https://github.com/stripe/stripe-go/pull/959) Mark `Customer` on `PaymentMethodDetachParams` as deprecated
-* [#957](https://github.com/stripe/stripe-go/pull/957) Add missing error code
+* [#959](https://github.com/tabeo/stripe-go/pull/959) Mark `Customer` on `PaymentMethodDetachParams` as deprecated
+* [#957](https://github.com/tabeo/stripe-go/pull/957) Add missing error code
 
 ## 63.1.1 - 2019-09-23
-* [#954](https://github.com/stripe/stripe-go/pull/954) Add support for `Stripe-Should-Retry` header
+* [#954](https://github.com/tabeo/stripe-go/pull/954) Add support for `Stripe-Should-Retry` header
 
 ## 63.1.0 - 2019-09-13
-* [#949](https://github.com/stripe/stripe-go/pull/949) Add support for `DeclineCode` on `Error` top-level
+* [#949](https://github.com/tabeo/stripe-go/pull/949) Add support for `DeclineCode` on `Error` top-level
 
 ## 63.0.0 - 2019-09-10
-* [#947](https://github.com/stripe/stripe-go/pull/947) Bump API version to [`2019-09-09`](https://stripe.com/docs/upgrades#2019-09-09)
+* [#947](https://github.com/tabeo/stripe-go/pull/947) Bump API version to [`2019-09-09`](https://stripe.com/docs/upgrades#2019-09-09)
 
 ## 62.10.0 - 2019-09-09
-* [#945](https://github.com/stripe/stripe-go/pull/945) Changes to `Account` and `Person` to represent identity verification state
+* [#945](https://github.com/tabeo/stripe-go/pull/945) Changes to `Account` and `Person` to represent identity verification state
 
 ## 62.9.0 - 2019-09-04
-* [#943](https://github.com/stripe/stripe-go/pull/943) Add support for `Authentication` and `URL` on Issuing `Authorization`
+* [#943](https://github.com/tabeo/stripe-go/pull/943) Add support for `Authentication` and `URL` on Issuing `Authorization`
 
 ## 62.8.2 - 2019-08-29
-* [#939](https://github.com/stripe/stripe-go/pull/939) Also log error in case of non-`stripe.Error`
+* [#939](https://github.com/tabeo/stripe-go/pull/939) Also log error in case of non-`stripe.Error`
 
 ## 62.8.1 - 2019-08-29
-* [#938](https://github.com/stripe/stripe-go/pull/938) Rearrange error logging so that 402 doesn't log an error
+* [#938](https://github.com/tabeo/stripe-go/pull/938) Rearrange error logging so that 402 doesn't log an error
 
 ## 62.8.0 - 2019-08-29
-* [#937](https://github.com/stripe/stripe-go/pull/937) Add support for `EndBehavior` on `SubscriptionSchedule`
+* [#937](https://github.com/tabeo/stripe-go/pull/937) Add support for `EndBehavior` on `SubscriptionSchedule`
 
 ## 62.7.0 - 2019-08-27
-* [#935](https://github.com/stripe/stripe-go/pull/935) Retry requests on a 429 that's a lock timeout
+* [#935](https://github.com/tabeo/stripe-go/pull/935) Retry requests on a 429 that's a lock timeout
 
 ## 62.6.0 - 2019-08-26
-* [#934](https://github.com/stripe/stripe-go/pull/934) Add support for `SubscriptionBillingCycleAnchorNow` and `SubscriptionBillingCycleAnchorUnchanged` on `Invoice`
-* [#933](https://github.com/stripe/stripe-go/pull/933) Add `PendingVerification` on `Account`, `Person` and `Capability`
+* [#934](https://github.com/tabeo/stripe-go/pull/934) Add support for `SubscriptionBillingCycleAnchorNow` and `SubscriptionBillingCycleAnchorUnchanged` on `Invoice`
+* [#933](https://github.com/tabeo/stripe-go/pull/933) Add `PendingVerification` on `Account`, `Person` and `Capability`
 
 ## 62.5.0 - 2019-08-23
-* [#930](https://github.com/stripe/stripe-go/pull/930) Add `FailureReason` to `Refund`
+* [#930](https://github.com/tabeo/stripe-go/pull/930) Add `FailureReason` to `Refund`
 
 ## 62.4.0 - 2019-08-22
-* [#926](https://github.com/stripe/stripe-go/pull/926) Add support for decimal amounts on Billing resources
+* [#926](https://github.com/tabeo/stripe-go/pull/926) Add support for decimal amounts on Billing resources
 
 ## 62.3.0 - 2019-08-22
-* [#928](https://github.com/stripe/stripe-go/pull/928) Bring retry code in-line with current best practices
+* [#928](https://github.com/tabeo/stripe-go/pull/928) Bring retry code in-line with current best practices
 
 ## 62.2.0 - 2019-08-21
-* [#922](https://github.com/stripe/stripe-go/pull/922) A few Billing changes
+* [#922](https://github.com/tabeo/stripe-go/pull/922) A few Billing changes
   * Add `Schedule` to `Subscription`
   * Add missing parameters for the Upcoming Invoice API: `Schedule`, `SubscriptionCancelAt`, `SubscriptionCancelNow`
   * Add missing properties and parameters for a `SubscriptionSchedule` phase: `BillingThresholds`, `CollectionMethod`, `DefaultPaymentMethod`, `InvoiceSettings`
-* [#923](https://github.com/stripe/stripe-go/pull/923) Add support for `Mode` on Checkout `Session`
+* [#923](https://github.com/tabeo/stripe-go/pull/923) Add support for `Mode` on Checkout `Session`
 
 ## 62.1.2 - 2019-08-19
-* [#921](https://github.com/stripe/stripe-go/pull/921) Mark `Customer` as an invalid parameter on PaymentMethod creation
+* [#921](https://github.com/tabeo/stripe-go/pull/921) Mark `Customer` as an invalid parameter on PaymentMethod creation
 
 ## 62.1.1 - 2019-08-15
-* [#918](https://github.com/stripe/stripe-go/pull/918) Fix `RadarEarlyFraudWarnings` to use the proper API endpoint
+* [#918](https://github.com/tabeo/stripe-go/pull/918) Fix `RadarEarlyFraudWarnings` to use the proper API endpoint
 
 ## 62.1.0 - 2019-08-15
-* [#916](https://github.com/stripe/stripe-go/pull/916)
+* [#916](https://github.com/tabeo/stripe-go/pull/916)
   * Add support for `PIN` on Issuing `Card` to reflect the status of a card's PIN
   * Add support for `Executive` on Person create, update and list
 
 ## 62.0.0 - 2019-08-14
-* [#915](https://github.com/stripe/stripe-go/pull/915) Move to API version [`2019-08-14`](https://stripe.com/docs/upgrades#2019-08-14) and other changes
+* [#915](https://github.com/tabeo/stripe-go/pull/915) Move to API version [`2019-08-14`](https://stripe.com/docs/upgrades#2019-08-14) and other changes
   * Pin to API version `2019-08-14`
   * Rename `AccountCapabilityPlatformPayments` to `AccountCapabilityTransfers`
   * Add `Executive` in `PersonRelationship`
@@ -382,58 +382,58 @@ Version 71 of stripe-go contains some major changes. Many of them are breaking, 
   * Make `OffSession` only support booleans on `PaymentIntent`
   * Remove `PaymentIntentLastPaymentError` and use `Error` instead
   * Move `DeclineCode` on `Error` to the `DeclineCode` type instead of `string`
-* [#914](https://github.com/stripe/stripe-go/pull/914) Update webhook handler example to use `http.MaxBytesReader`
+* [#914](https://github.com/tabeo/stripe-go/pull/914) Update webhook handler example to use `http.MaxBytesReader`
 
 ## 61.27.0 - 2019-08-09
-* [#913](https://github.com/stripe/stripe-go/pull/913) Remove `SubscriptionScheduleRevision`
+* [#913](https://github.com/tabeo/stripe-go/pull/913) Remove `SubscriptionScheduleRevision`
   * Note that this is technically a breaking change, however we've chosen to release it as a minor version in light of the fact that this resource and its API methods were virtually unused.
 
 ## 61.26.0 - 2019-08-08
-* [#911](https://github.com/stripe/stripe-go/pull/911)
+* [#911](https://github.com/tabeo/stripe-go/pull/911)
   * Add support for `PaymentMethodDetails.Card.Moto` on `Charge`
   * Add support `StatementDescriptorSuffix` on `Charge` and `PaymentIntent`
   * Add support `SubscriptionData.ApplicationFeePercent` on Checkout `Session`
 
 ## 61.25.0 - 2019-07-30
-* [#910](https://github.com/stripe/stripe-go/pull/910) Add `balancetransaction` package with a `Get` and `List` methods
+* [#910](https://github.com/tabeo/stripe-go/pull/910) Add `balancetransaction` package with a `Get` and `List` methods
 
 ## 61.24.0 - 2019-07-30
-* [#906](https://github.com/stripe/stripe-go/pull/906) Add decline code type and constants (for use with card errors)
+* [#906](https://github.com/tabeo/stripe-go/pull/906) Add decline code type and constants (for use with card errors)
 
 ## 61.23.0 - 2019-07-29
-* [#879](https://github.com/stripe/stripe-go/pull/879) Add support for OAuth API endpoints
+* [#879](https://github.com/tabeo/stripe-go/pull/879) Add support for OAuth API endpoints
 
 ## 61.22.0 - 2019-07-29
-* [#909](https://github.com/stripe/stripe-go/pull/909) Rename `PayentMethodOptions` to `PaymentMethodOptions` on `PaymentIntent` and `SetupIntent`. Keep the old name until the next major version for backwards-compatibility
+* [#909](https://github.com/tabeo/stripe-go/pull/909) Rename `PayentMethodOptions` to `PaymentMethodOptions` on `PaymentIntent` and `SetupIntent`. Keep the old name until the next major version for backwards-compatibility
 
 ## 61.21.0 - 2019-07-26
-* [#904](https://github.com/stripe/stripe-go/pull/904) Add support for Klarna and source orders
+* [#904](https://github.com/tabeo/stripe-go/pull/904) Add support for Klarna and source orders
 
 ## 61.20.0 - 2019-07-25
-* [#897](https://github.com/stripe/stripe-go/pull/897) Add all missing error codes
-* [#903](https://github.com/stripe/stripe-go/pull/903) Disable HTTP/2 by default (until underlying bug in Go's implementation is fixed)
-* [#905](https://github.com/stripe/stripe-go/pull/905) Add missing `Authenticated` field for 3DS charges
+* [#897](https://github.com/tabeo/stripe-go/pull/897) Add all missing error codes
+* [#903](https://github.com/tabeo/stripe-go/pull/903) Disable HTTP/2 by default (until underlying bug in Go's implementation is fixed)
+* [#905](https://github.com/tabeo/stripe-go/pull/905) Add missing `Authenticated` field for 3DS charges
 
 ## 61.19.0 - 2019-07-22
-* [#902](https://github.com/stripe/stripe-go/pull/902) Add support for `StatementDescriptor` when capturing a `PaymentIntent`
+* [#902](https://github.com/tabeo/stripe-go/pull/902) Add support for `StatementDescriptor` when capturing a `PaymentIntent`
 
 ## 61.18.0 - 2019-07-19
-* [#898](https://github.com/stripe/stripe-go/pull/898) Add `Customer` filter when listing `CreditNote`
-* [#899](https://github.com/stripe/stripe-go/pull/899) Add `OffSession` parameter when updating `SubscriptionItem`
+* [#898](https://github.com/tabeo/stripe-go/pull/898) Add `Customer` filter when listing `CreditNote`
+* [#899](https://github.com/tabeo/stripe-go/pull/899) Add `OffSession` parameter when updating `SubscriptionItem`
 
 ## 61.17.0 - 2019-07-17
-* [#895](https://github.com/stripe/stripe-go/pull/895) Add `VoidedAt` on `CreditNote`
+* [#895](https://github.com/tabeo/stripe-go/pull/895) Add `VoidedAt` on `CreditNote`
 
 ## 61.16.0 - 2019-07-16
-* [#894](https://github.com/stripe/stripe-go/pull/894) Introduce encoding for high precision decimal fields
+* [#894](https://github.com/tabeo/stripe-go/pull/894) Introduce encoding for high precision decimal fields
 
 ## 61.15.0 - 2019-07-15
-* [#893](https://github.com/stripe/stripe-go/pull/893)
+* [#893](https://github.com/tabeo/stripe-go/pull/893)
   * Add support for `PaymentMethodOptions` on `PaymentIntent` and `SetupIntent`
   * Add missing parameters to `PaymentIntentConfirmParams`
 
 ## 61.14.0 - 2019-07-15
-* [#891](https://github.com/stripe/stripe-go/pull/891) Various changes relaed to SCA for Billing
+* [#891](https://github.com/tabeo/stripe-go/pull/891) Various changes relaed to SCA for Billing
   * Add support for `PendingSetupIntent` on `Subscription`
   * Add support for `PaymentBehavior` on `Subscription` creation and update
   * Add support for `PaymentBehavior` on `SubscriptionItem` update
@@ -441,193 +441,193 @@ Version 71 of stripe-go contains some major changes. Many of them are breaking, 
   * Add support for `OffSession` on `Subscription` creation and update
 
 ## 61.13.0 - 2019-07-05
-* [#888](https://github.com/stripe/stripe-go/pull/888) Add support for `SetupFutureUsage` on `PaymentIntent` update and confirm
-* [#890](https://github.com/stripe/stripe-go/pull/890) Add support for `SetupFutureUsage` on Checkout `Session`
+* [#888](https://github.com/tabeo/stripe-go/pull/888) Add support for `SetupFutureUsage` on `PaymentIntent` update and confirm
+* [#890](https://github.com/tabeo/stripe-go/pull/890) Add support for `SetupFutureUsage` on Checkout `Session`
 
 ## 61.12.0 - 2019-07-01
-* [#887](https://github.com/stripe/stripe-go/pull/887) Allow `OffSession` to be a bool on `PaymentIntent` creation and confirmation
+* [#887](https://github.com/tabeo/stripe-go/pull/887) Allow `OffSession` to be a bool on `PaymentIntent` creation and confirmation
 
 ## 61.11.0 - 2019-07-01
-* [#886](https://github.com/stripe/stripe-go/pull/886) Add `CardVerificationUnavailable` constant value
+* [#886](https://github.com/tabeo/stripe-go/pull/886) Add `CardVerificationUnavailable` constant value
 
 ## 61.10.0 - 2019-07-01
-* [#884](https://github.com/stripe/stripe-go/pull/884) Add support for the `SetupIntent` resource and APIs
-* [#885](https://github.com/stripe/stripe-go/pull/885) Quick fix to the `NextAction` property on `SetupIntent`
+* [#884](https://github.com/tabeo/stripe-go/pull/884) Add support for the `SetupIntent` resource and APIs
+* [#885](https://github.com/tabeo/stripe-go/pull/885) Quick fix to the `NextAction` property on `SetupIntent`
 
 ## 61.9.0 - 2019-06-27
-* [#882](https://github.com/stripe/stripe-go/pull/882) Add `DefaultPaymentMethod` and `DefaultSource` to `SubscriptionSchedule`
+* [#882](https://github.com/tabeo/stripe-go/pull/882) Add `DefaultPaymentMethod` and `DefaultSource` to `SubscriptionSchedule`
 
 ## 61.8.0 - 2019-06-27
 * **Note:** This release was deleted after we merged some bad code. Please use 61.9.0 instead.
 
 ## 61.7.1 - 2019-06-25
-* [#881](https://github.com/stripe/stripe-go/pull/881) Documentation fixes
+* [#881](https://github.com/tabeo/stripe-go/pull/881) Documentation fixes
 
 ## 61.7.0 - 2019-06-25
-* [#880](https://github.com/stripe/stripe-go/pull/880)
+* [#880](https://github.com/tabeo/stripe-go/pull/880)
   * Add support for `CollectionMethod` on `Invoice`, `Subscription` and `SubscriptionSchedule`
   * Add support for `UnifiedProration` on `InvoiceLine`
 
 ## 61.6.0 - 2019-06-24
-* [#878](https://github.com/stripe/stripe-go/pull/878) Enable request latency telemetry by default
+* [#878](https://github.com/tabeo/stripe-go/pull/878) Enable request latency telemetry by default
 
 ## 61.5.0 - 2019-06-20
-* [#877](https://github.com/stripe/stripe-go/pull/877) Add `CancellationReason` to `PaymentIntent`
+* [#877](https://github.com/tabeo/stripe-go/pull/877) Add `CancellationReason` to `PaymentIntent`
 
 ## 61.4.0 - 2019-06-18
-* [#845](https://github.com/stripe/stripe-go/pull/845) Add support for `CustomerBalanceTransaction` resource and APIs
-* [#875](https://github.com/stripe/stripe-go/pull/875) Add missing `Account` settings
+* [#845](https://github.com/tabeo/stripe-go/pull/845) Add support for `CustomerBalanceTransaction` resource and APIs
+* [#875](https://github.com/tabeo/stripe-go/pull/875) Add missing `Account` settings
 
 ## 61.3.0 - 2019-06-18
-* [#874](https://github.com/stripe/stripe-go/pull/874) Log only to info on 402 errors from Stripe
+* [#874](https://github.com/tabeo/stripe-go/pull/874) Log only to info on 402 errors from Stripe
 
 ## 61.2.0 - 2019-06-14
-* [#870](https://github.com/stripe/stripe-go/pull/870) Add support for `MerchantAmount` `MerchantCurrency` to Issuing `Transaction`
-* [#871](https://github.com/stripe/stripe-go/pull/871) Add support for `SubmitType` to Checkout `Session`
+* [#870](https://github.com/tabeo/stripe-go/pull/870) Add support for `MerchantAmount` `MerchantCurrency` to Issuing `Transaction`
+* [#871](https://github.com/tabeo/stripe-go/pull/871) Add support for `SubmitType` to Checkout `Session`
 
 ## 61.1.0 - 2019-06-06
-* [#867](https://github.com/stripe/stripe-go/pull/867) Add support for `Location` on Terminal `ConnectionToken`
-* [#868](https://github.com/stripe/stripe-go/pull/868) Add support for `Balance` and deprecate `AccountBalance` on Customer
+* [#867](https://github.com/tabeo/stripe-go/pull/867) Add support for `Location` on Terminal `ConnectionToken`
+* [#868](https://github.com/tabeo/stripe-go/pull/868) Add support for `Balance` and deprecate `AccountBalance` on Customer
 
 ## 61.0.1 - 2019-05-24
-* [#865](https://github.com/stripe/stripe-go/pull/865) Fix `earlyfraudwarning` client
+* [#865](https://github.com/tabeo/stripe-go/pull/865) Fix `earlyfraudwarning` client
 
 ## 61.0.0 - 2019-05-24
-* [#864](https://github.com/stripe/stripe-go/pull/864) Pin library to API version `2019-05-16`
+* [#864](https://github.com/tabeo/stripe-go/pull/864) Pin library to API version `2019-05-16`
 
 ## 60.19.0 - 2019-05-24
-* [#862](https://github.com/stripe/stripe-go/pull/862) Add support for `radar.early_fraud_warning` resource
+* [#862](https://github.com/tabeo/stripe-go/pull/862) Add support for `radar.early_fraud_warning` resource
 
 ## 60.18.0 - 2019-05-22
-* [#861](https://github.com/stripe/stripe-go/pull/861) Add new tax ID types: `TaxIDTypeINGST` and `TaxIDTypeNOVAT`
+* [#861](https://github.com/tabeo/stripe-go/pull/861) Add new tax ID types: `TaxIDTypeINGST` and `TaxIDTypeNOVAT`
 
 ## 60.17.0 - 2019-05-16
-* [#860](https://github.com/stripe/stripe-go/pull/860) Add `OffSession` parameter to payment intents
+* [#860](https://github.com/tabeo/stripe-go/pull/860) Add `OffSession` parameter to payment intents
 
 ## 60.16.0 - 2019-05-14
-* [#859](https://github.com/stripe/stripe-go/pull/859) Add missing `InvoiceSettings` to `Customer`
+* [#859](https://github.com/tabeo/stripe-go/pull/859) Add missing `InvoiceSettings` to `Customer`
 
 ## 60.15.0 - 2019-05-14
-* [#855](https://github.com/stripe/stripe-go/pull/855) Add support for the capability resource and APIs
+* [#855](https://github.com/tabeo/stripe-go/pull/855) Add support for the capability resource and APIs
 
 ## 60.14.0 - 2019-05-10
-* [#858](https://github.com/stripe/stripe-go/pull/858) Add `StartDate` to `Subscription`
+* [#858](https://github.com/tabeo/stripe-go/pull/858) Add `StartDate` to `Subscription`
 
 ## 60.13.2 - 2019-05-10
-* [#857](https://github.com/stripe/stripe-go/pull/857) Fix invoice's `PaymentIntent` so its JSON tag uses API snakecase
+* [#857](https://github.com/tabeo/stripe-go/pull/857) Fix invoice's `PaymentIntent` so its JSON tag uses API snakecase
 
 ## 60.13.1 - 2019-05-08
-* [#853](https://github.com/stripe/stripe-go/pull/853) Add paymentmethod package to the clients list
+* [#853](https://github.com/tabeo/stripe-go/pull/853) Add paymentmethod package to the clients list
 
 ## 60.13.0 - 2019-05-07
-* [#850](https://github.com/stripe/stripe-go/pull/850) `OperatorAccount` is now deprecated across all Terminal endpoints
-* [#851](https://github.com/stripe/stripe-go/pull/851) Add `Customer` on the `Source` object
+* [#850](https://github.com/tabeo/stripe-go/pull/850) `OperatorAccount` is now deprecated across all Terminal endpoints
+* [#851](https://github.com/tabeo/stripe-go/pull/851) Add `Customer` on the `Source` object
 
 ## 60.12.2 - 2019-05-06
-* [#843](https://github.com/stripe/stripe-go/pull/843) Lock mutex while in `SetBackends`
+* [#843](https://github.com/tabeo/stripe-go/pull/843) Lock mutex while in `SetBackends`
 
 ## 60.12.1 - 2019-05-06
-* [#848](https://github.com/stripe/stripe-go/pull/848) Fix `Items` on `CheckoutSessionSubscriptionDataParams` to be a slice
+* [#848](https://github.com/tabeo/stripe-go/pull/848) Fix `Items` on `CheckoutSessionSubscriptionDataParams` to be a slice
 
 ## 60.12.0 - 2019-05-05
-* [#846](https://github.com/stripe/stripe-go/pull/846) Add support for the `PaymentIntent` filter on `ChargeListParams`
+* [#846](https://github.com/tabeo/stripe-go/pull/846) Add support for the `PaymentIntent` filter on `ChargeListParams`
 
 ## 60.11.0 - 2019-05-02
-* [#841](https://github.com/stripe/stripe-go/pull/841) Add support for the `Customer` filter on `PaymentIntentListParams`
-* [#842](https://github.com/stripe/stripe-go/pull/842) Add support for replacing another Issuing `Card` on creation
+* [#841](https://github.com/tabeo/stripe-go/pull/841) Add support for the `Customer` filter on `PaymentIntentListParams`
+* [#842](https://github.com/tabeo/stripe-go/pull/842) Add support for replacing another Issuing `Card` on creation
 
 ## 60.10.0 - 2019-04-30
-* [#839](https://github.com/stripe/stripe-go/pull/839) Add support for ACSS Debit in `PaymentMethodDetails` on `Charge`
-* [#840](https://github.com/stripe/stripe-go/pull/840) Add support for `FileLinkData` on `File` creation
+* [#839](https://github.com/tabeo/stripe-go/pull/839) Add support for ACSS Debit in `PaymentMethodDetails` on `Charge`
+* [#840](https://github.com/tabeo/stripe-go/pull/840) Add support for `FileLinkData` on `File` creation
 
 ## 60.9.0 - 2019-04-24
-* [#828](https://github.com/stripe/stripe-go/pull/828) Add support for the `TaxRate` resource and APIs
+* [#828](https://github.com/tabeo/stripe-go/pull/828) Add support for the `TaxRate` resource and APIs
 
 ## 60.8.0 - 2019-04-23
-* [#834](https://github.com/stripe/stripe-go/pull/834) Add support for the `TaxId` resource and APIs
+* [#834](https://github.com/tabeo/stripe-go/pull/834) Add support for the `TaxId` resource and APIs
 
 ## 60.7.0 - 2019-04-18
-* [#823](https://github.com/stripe/stripe-go/pull/823) Add support for the `CreditNote` resource and APIs
-* [#829](https://github.com/stripe/stripe-go/pull/829) Add support for `Address`, `Name`, `Phone` and `PreferredLocales` on `Customer` and related fields on `Invoice`
+* [#823](https://github.com/tabeo/stripe-go/pull/823) Add support for the `CreditNote` resource and APIs
+* [#829](https://github.com/tabeo/stripe-go/pull/829) Add support for `Address`, `Name`, `Phone` and `PreferredLocales` on `Customer` and related fields on `Invoice`
 
 ## 60.6.0 - 2019-04-18
-* [#837](https://github.com/stripe/stripe-go/pull/837) Add helpers to go from `[]T` to `[]*T` for `string`, `int64`, `float64`, `bool`
+* [#837](https://github.com/tabeo/stripe-go/pull/837) Add helpers to go from `[]T` to `[]*T` for `string`, `int64`, `float64`, `bool`
 
 ## 60.5.1 - 2019-04-16
-* [#836](https://github.com/stripe/stripe-go/pull/836) Fix `SpendingLimits` on `AuthorizationControlsParams` and `AuthorizationControls` to be a slice on Issuing `Card` and `Cardholder`
+* [#836](https://github.com/tabeo/stripe-go/pull/836) Fix `SpendingLimits` on `AuthorizationControlsParams` and `AuthorizationControls` to be a slice on Issuing `Card` and `Cardholder`
 
 ## 60.5.0 - 2019-04-16
-* [#740](https://github.com/stripe/stripe-go/pull/740) Add support for the Checkout `Session` resource and APIs
-* [#832](https://github.com/stripe/stripe-go/pull/832) Add support for `version` and `succeeded` properties in the `payment_method_details[card][three_d_secure]` hash for `Charge`.
-* [#835](https://github.com/stripe/stripe-go/pull/835) Add support for passing `payment_method` on `Customer` creation
+* [#740](https://github.com/tabeo/stripe-go/pull/740) Add support for the Checkout `Session` resource and APIs
+* [#832](https://github.com/tabeo/stripe-go/pull/832) Add support for `version` and `succeeded` properties in the `payment_method_details[card][three_d_secure]` hash for `Charge`.
+* [#835](https://github.com/tabeo/stripe-go/pull/835) Add support for passing `payment_method` on `Customer` creation
 
 ## 60.4.0 - 2019-04-15
-* [#833](https://github.com/stripe/stripe-go/pull/833) Add more context when failing to unmarshal JSON
+* [#833](https://github.com/tabeo/stripe-go/pull/833) Add more context when failing to unmarshal JSON
 
 ## 60.3.0 - 2019-04-12
-* [#831](https://github.com/stripe/stripe-go/pull/831) Add support for `authorization_controls` on `Cardholder` and `authorization_controls[spending_limits]` added to `Card` too for Issuing resources
+* [#831](https://github.com/tabeo/stripe-go/pull/831) Add support for `authorization_controls` on `Cardholder` and `authorization_controls[spending_limits]` added to `Card` too for Issuing resources
 
 ## 60.2.0 - 2019-04-09
-* [#827](https://github.com/stripe/stripe-go/pull/827) Add support for `confirmation_method` on `PaymentIntent` creation
+* [#827](https://github.com/tabeo/stripe-go/pull/827) Add support for `confirmation_method` on `PaymentIntent` creation
 
 ## 60.1.0 - 2019-04-09
-* [#824](https://github.com/stripe/stripe-go/pull/824) Add support for `PaymentIntent` and `PaymentMethod` on `Customer`, `Subscription` and `Invoice`.
+* [#824](https://github.com/tabeo/stripe-go/pull/824) Add support for `PaymentIntent` and `PaymentMethod` on `Customer`, `Subscription` and `Invoice`.
 
 ## 60.0.1 - 2019-04-02
-* [#825](https://github.com/stripe/stripe-go/pull/825) Fix the API for usage record summary listing
+* [#825](https://github.com/tabeo/stripe-go/pull/825) Fix the API for usage record summary listing
 
 ## 60.0.0 - 2019-03-27
-* [#820](https://github.com/stripe/stripe-go/pull/820) Add various missing parameters
+* [#820](https://github.com/tabeo/stripe-go/pull/820) Add various missing parameters
     * On `PIIParams` the previous `PersonalIDNumber` is fixed to `IDNumber` which we're releasing as a minor breaking change even though the old version probably didn't work correctly
 
 ## 59.1.0 - 2019-03-22
-* [#819](https://github.com/stripe/stripe-go/pull/819) Add default level prefixes in messages from `LeveledLogger`
+* [#819](https://github.com/tabeo/stripe-go/pull/819) Add default level prefixes in messages from `LeveledLogger`
 
 ## 59.0.0 - 2019-03-22
-* [#818](https://github.com/stripe/stripe-go/pull/818) Implement leveled logging (very minor breaking change -- only a couple properties were removed from the internal `BackendImplementation`)
+* [#818](https://github.com/tabeo/stripe-go/pull/818) Implement leveled logging (very minor breaking change -- only a couple properties were removed from the internal `BackendImplementation`)
 
 ## 58.1.0 - 2019-03-19
-* [#815](https://github.com/stripe/stripe-go/pull/815) Add support for passing token on account or person creation
+* [#815](https://github.com/tabeo/stripe-go/pull/815) Add support for passing token on account or person creation
 
 ## 58.0.0 - 2019-03-19
-* [#811](https://github.com/stripe/stripe-go/pull/811) Add support for API version 2019-03-14
-* [#814](https://github.com/stripe/stripe-go/pull/814) Properly override API version if it's set in the request
+* [#811](https://github.com/tabeo/stripe-go/pull/811) Add support for API version 2019-03-14
+* [#814](https://github.com/tabeo/stripe-go/pull/814) Properly override API version if it's set in the request
 
 ## 57.8.0 - 2019-03-18
-* [#806](https://github.com/stripe/stripe-go/pull/806) Add support for the `PaymentMethod` resource and APIs
-* [#812](https://github.com/stripe/stripe-go/pull/812) Add support for deleting a Terminal `Location` and `Reader`
+* [#806](https://github.com/tabeo/stripe-go/pull/806) Add support for the `PaymentMethod` resource and APIs
+* [#812](https://github.com/tabeo/stripe-go/pull/812) Add support for deleting a Terminal `Location` and `Reader`
 
 ## 57.7.0 - 2019-03-13
-* [#810](https://github.com/stripe/stripe-go/pull/810) Add support for `columns` on `ReportRun` and `default_columns` on `ReportType`.
+* [#810](https://github.com/tabeo/stripe-go/pull/810) Add support for `columns` on `ReportRun` and `default_columns` on `ReportType`.
 
 ## 57.6.0 - 2019-03-06
-* [#808](https://github.com/stripe/stripe-go/pull/808) Add support for `backdate_start_date` and `cancel_at` on `Subscription`.
+* [#808](https://github.com/tabeo/stripe-go/pull/808) Add support for `backdate_start_date` and `cancel_at` on `Subscription`.
 
 ## 57.5.0 - 2019-03-05
-* [#807](https://github.com/stripe/stripe-go/pull/807) Add support for `current_period_end` and `current_period_start` filters when listing `Invoice`.
+* [#807](https://github.com/tabeo/stripe-go/pull/807) Add support for `current_period_end` and `current_period_start` filters when listing `Invoice`.
 
 ## 57.4.0 - 2019-03-04
-* [#798](https://github.com/stripe/stripe-go/pull/798) Properly support serialization of `Event`.
+* [#798](https://github.com/tabeo/stripe-go/pull/798) Properly support serialization of `Event`.
 
 ## 57.3.0 - 2019-02-28
-* [#803](https://github.com/stripe/stripe-go/pull/803) Add support for `api_version` on `WebhookEndpoint`.
+* [#803](https://github.com/tabeo/stripe-go/pull/803) Add support for `api_version` on `WebhookEndpoint`.
 
 ## 57.2.0 - 2019-02-27
-* [#795](https://github.com/stripe/stripe-go/pull/795) Add support for `created` and `status_transitions` on `Invoice`
-* [#802](https://github.com/stripe/stripe-go/pull/802) Add support for `latest_invoice` on `Subscription`
+* [#795](https://github.com/tabeo/stripe-go/pull/795) Add support for `created` and `status_transitions` on `Invoice`
+* [#802](https://github.com/tabeo/stripe-go/pull/802) Add support for `latest_invoice` on `Subscription`
 
 ## 57.1.1 - 2019-02-26
-* [#800](https://github.com/stripe/stripe-go/pull/800) Add `UsageRecordSummaries` to the list of clients.
+* [#800](https://github.com/tabeo/stripe-go/pull/800) Add `UsageRecordSummaries` to the list of clients.
 
 ## 57.1.0 - 2019-02-22
-* [#796](https://github.com/stripe/stripe-go/pull/796) Correct `InvoiceItems` in `InvoiceParams` to be a slice of structs instead of a struct (this is technically a breaking change, but the previous implementation was non-functional, so we're releasing it as a minor version)
+* [#796](https://github.com/tabeo/stripe-go/pull/796) Correct `InvoiceItems` in `InvoiceParams` to be a slice of structs instead of a struct (this is technically a breaking change, but the previous implementation was non-functional, so we're releasing it as a minor version)
 
 ## 57.0.1 - 2019-02-20
-* [#794](https://github.com/stripe/stripe-go/pull/794) Properly pin to API version `2019-02-19`. The previous major version incorrectly stayed on API version `2019-02-11` which prevented requests to manage Connected accounts from working and charges to have the new statement descriptor behavior.
+* [#794](https://github.com/tabeo/stripe-go/pull/794) Properly pin to API version `2019-02-19`. The previous major version incorrectly stayed on API version `2019-02-11` which prevented requests to manage Connected accounts from working and charges to have the new statement descriptor behavior.
 
 ## 57.0.0 - 2019-02-19
 **Important:** This version is non-functional and has been yanked in favor of 57.0.1.
-* [#782](https://github.com/stripe/stripe-go/pull/782) Changes related to the new API version `2019-02-19`:
+* [#782](https://github.com/tabeo/stripe-go/pull/782) Changes related to the new API version `2019-02-19`:
   * The library is now pinned to API version `2019-02-19`
   * Numerous changes to the `Account` resource and APIs:
     * The `legal_entity` property on the Account API resource has been replaced with `individual`, `company`, and `business_type`
@@ -638,309 +638,309 @@ Version 71 of stripe-go contains some major changes. Many of them are breaking, 
   * The deprecated parameter `save_source_to_customer` on `PaymentIntent` has now been removed. Use `save_payment_method` instead
 
 ## 56.1.0 - 2019-02-18
-* [#737](https://github.com/stripe/stripe-go/pull/737) Add support for setting `request_capabilities` and retrieving `capabilities` on `Account`
-* [#793](https://github.com/stripe/stripe-go/pull/793) Add support for `save_payment_method` on `PaymentIntent`
+* [#737](https://github.com/tabeo/stripe-go/pull/737) Add support for setting `request_capabilities` and retrieving `capabilities` on `Account`
+* [#793](https://github.com/tabeo/stripe-go/pull/793) Add support for `save_payment_method` on `PaymentIntent`
 
 ## 56.0.0 - 2019-02-13
-* [#785](https://github.com/stripe/stripe-go/pull/785) Changes to the Payment Intent APIs for the next API version
-* [#789](https://github.com/stripe/stripe-go/pull/789) Allow API arrays to be emptied by setting an empty array
+* [#785](https://github.com/tabeo/stripe-go/pull/785) Changes to the Payment Intent APIs for the next API version
+* [#789](https://github.com/tabeo/stripe-go/pull/789) Allow API arrays to be emptied by setting an empty array
 
 ## 55.15.0 - 2019-02-12
-* [#764](https://github.com/stripe/stripe-go/pull/764) Add support for `transfer_data[destination]` on `Invoice` and `Subscription`
-* [#784](https://github.com/stripe/stripe-go/pull/784)
+* [#764](https://github.com/tabeo/stripe-go/pull/764) Add support for `transfer_data[destination]` on `Invoice` and `Subscription`
+* [#784](https://github.com/tabeo/stripe-go/pull/784)
     * Add support for `SubscriptionSchedule` and `SubscriptionScheduleRevision`
     * Add support for `payment_method_types` on `PaymentIntent`
-* [#787](https://github.com/stripe/stripe-go/pull/787) Add support for `transfer_data[amount]` on `Charge`
+* [#787](https://github.com/tabeo/stripe-go/pull/787) Add support for `transfer_data[amount]` on `Charge`
 
 ## 55.14.0 - 2019-01-25
-* [#765](https://github.com/stripe/stripe-go/pull/765) Add support for `destination_payment_refund` and `source_refund` on the `Reversal` resource
+* [#765](https://github.com/tabeo/stripe-go/pull/765) Add support for `destination_payment_refund` and `source_refund` on the `Reversal` resource
 
 ## 55.13.0 - 2019-01-17
-* [#779](https://github.com/stripe/stripe-go/pull/779) Add support for `receipt_url` on `Charge`
+* [#779](https://github.com/tabeo/stripe-go/pull/779) Add support for `receipt_url` on `Charge`
 
 ## 55.12.0 - 2019-01-17
-* [#766](https://github.com/stripe/stripe-go/pull/766) Add optional support for sending request telemetry to Stripe
+* [#766](https://github.com/tabeo/stripe-go/pull/766) Add optional support for sending request telemetry to Stripe
 
 ## 55.11.0 - 2019-01-17
-* [#776](https://github.com/stripe/stripe-go/pull/776) Add support for billing thresholds
+* [#776](https://github.com/tabeo/stripe-go/pull/776) Add support for billing thresholds
 
 ## 55.10.0 - 2019-01-16
-* [#773](https://github.com/stripe/stripe-go/pull/773) Add support for `custom_fields` and `footer` on `Invoice`
-* [#774](https://github.com/stripe/stripe-go/pull/774) Revert Go module support
+* [#773](https://github.com/tabeo/stripe-go/pull/773) Add support for `custom_fields` and `footer` on `Invoice`
+* [#774](https://github.com/tabeo/stripe-go/pull/774) Revert Go module support
 
 ## 55.9.0 - 2019-01-15
-* [#769](https://github.com/stripe/stripe-go/pull/769) Add field `Amount` to `IssuingTransaction`
+* [#769](https://github.com/tabeo/stripe-go/pull/769) Add field `Amount` to `IssuingTransaction`
 
 ## 55.8.0 - 2019-01-09
-* [#763](https://github.com/stripe/stripe-go/pull/763) Add `application_fee_amount` to `Charge` and on charge create and capture params
+* [#763](https://github.com/tabeo/stripe-go/pull/763) Add `application_fee_amount` to `Charge` and on charge create and capture params
 
 ## 55.7.0 - 2019-01-09
-* [#738](https://github.com/stripe/stripe-go/pull/738) Add support for the account link resource
+* [#738](https://github.com/tabeo/stripe-go/pull/738) Add support for the account link resource
 
 ## 55.6.0 - 2019-01-09
-* [#762](https://github.com/stripe/stripe-go/pull/762) Add support for new invoice items parameters when retrieving an upcoming invoice
+* [#762](https://github.com/tabeo/stripe-go/pull/762) Add support for new invoice items parameters when retrieving an upcoming invoice
 
 ## 55.5.0 - 2019-01-07
-* [#744](https://github.com/stripe/stripe-go/pull/744) Add support for `transfer_data[destination]` on Charge struct and params
-* [#746](https://github.com/stripe/stripe-go/pull/746) Add support for `wallet_provider` on the Issuing Authorization
+* [#744](https://github.com/tabeo/stripe-go/pull/744) Add support for `transfer_data[destination]` on Charge struct and params
+* [#746](https://github.com/tabeo/stripe-go/pull/746) Add support for `wallet_provider` on the Issuing Authorization
 
 ## 55.4.0 - 2019-01-07
-* [#745](https://github.com/stripe/stripe-go/pull/745) Add support for `pending` parameter when listing invoice items
+* [#745](https://github.com/tabeo/stripe-go/pull/745) Add support for `pending` parameter when listing invoice items
 
 ## 55.3.0 - 2019-01-02
-* [#742](https://github.com/stripe/stripe-go/pull/742) Add field `FraudType` to `IssuerFraudRecord`
+* [#742](https://github.com/tabeo/stripe-go/pull/742) Add field `FraudType` to `IssuerFraudRecord`
 
 ## 55.2.0 - 2018-12-31
-* [#741](https://github.com/stripe/stripe-go/pull/741) Add missing parameters `InvoiceNow` and `Prorate` for subscription cancellation
+* [#741](https://github.com/tabeo/stripe-go/pull/741) Add missing parameters `InvoiceNow` and `Prorate` for subscription cancellation
 
 ## 55.1.0 - 2018-12-27
-* [#743](https://github.com/stripe/stripe-go/pull/743) Add support for `clear_usage` on `SubscriptionItem` deletion
+* [#743](https://github.com/tabeo/stripe-go/pull/743) Add support for `clear_usage` on `SubscriptionItem` deletion
 
 ## 55.0.0 - 2018-12-13
-* [#739](https://github.com/stripe/stripe-go/pull/739) Use `ApplicationFee` struct for `FeeRefund.Fee` (minor breaking change)
+* [#739](https://github.com/tabeo/stripe-go/pull/739) Use `ApplicationFee` struct for `FeeRefund.Fee` (minor breaking change)
 
 ## 54.2.0 - 2018-11-30
-* [#734](https://github.com/stripe/stripe-go/pull/734) Put `/v1/` prefix as part of all paths instead of URL
+* [#734](https://github.com/tabeo/stripe-go/pull/734) Put `/v1/` prefix as part of all paths instead of URL
 
 ## 54.1.1 - 2018-11-30
-* [#733](https://github.com/stripe/stripe-go/pull/733) Fix malformed URL generated for the uploads API when using `NewBackends`
+* [#733](https://github.com/tabeo/stripe-go/pull/733) Fix malformed URL generated for the uploads API when using `NewBackends`
 
 ## 54.1.0 - 2018-11-28
-* [#730](https://github.com/stripe/stripe-go/pull/730) Add support for the Review resource
-* [#731](https://github.com/stripe/stripe-go/pull/731) Add missing properties on the Refund resource
+* [#730](https://github.com/tabeo/stripe-go/pull/730) Add support for the Review resource
+* [#731](https://github.com/tabeo/stripe-go/pull/731) Add missing properties on the Refund resource
 
 ## 54.0.0 - 2018-11-27
-* [#721](https://github.com/stripe/stripe-go/pull/721) Add support for `RadarValueList` and `RadarValueListItem`
-* [#721](https://github.com/stripe/stripe-go/pull/721) Remove `Closed` and `Forgiven` from `InvoiceParams`
-* [#721](https://github.com/stripe/stripe-go/pull/721) Add `PaidOutOfBand` to `InvoicePayParams`
+* [#721](https://github.com/tabeo/stripe-go/pull/721) Add support for `RadarValueList` and `RadarValueListItem`
+* [#721](https://github.com/tabeo/stripe-go/pull/721) Remove `Closed` and `Forgiven` from `InvoiceParams`
+* [#721](https://github.com/tabeo/stripe-go/pull/721) Add `PaidOutOfBand` to `InvoicePayParams`
 
 ## 53.4.0 - 2018-11-26
-* [#728](https://github.com/stripe/stripe-go/pull/728) Add `IssuingCard` to `EphemeralKeyParams`
+* [#728](https://github.com/tabeo/stripe-go/pull/728) Add `IssuingCard` to `EphemeralKeyParams`
 
 ## 53.3.0 - 2018-11-26
-* [#727](https://github.com/stripe/stripe-go/pull/727) Add support for `TransferData` on payment intent create and update
+* [#727](https://github.com/tabeo/stripe-go/pull/727) Add support for `TransferData` on payment intent create and update
 
 ## 53.2.0 - 2018-11-21
-* [#725](https://github.com/stripe/stripe-go/pull/725) Improved error deserialization
+* [#725](https://github.com/tabeo/stripe-go/pull/725) Improved error deserialization
 
 ## 53.1.0 - 2018-11-15
-* [#723](https://github.com/stripe/stripe-go/pull/723) Add support for `last_payment_error` on `PaymentIntent`.
-* [#724](https://github.com/stripe/stripe-go/pull/724) Add support for `transfer_data[destination]` on `PaymentIntent`.
+* [#723](https://github.com/tabeo/stripe-go/pull/723) Add support for `last_payment_error` on `PaymentIntent`.
+* [#724](https://github.com/tabeo/stripe-go/pull/724) Add support for `transfer_data[destination]` on `PaymentIntent`.
 
 ## 53.0.1 - 2018-11-12
-* [#714](https://github.com/stripe/stripe-go/pull/714) Fix bug in retry logic that would cause the client to panic
+* [#714](https://github.com/tabeo/stripe-go/pull/714) Fix bug in retry logic that would cause the client to panic
 
 ## 53.0.0 - 2018-11-08
-* [#716](https://github.com/stripe/stripe-go/pull/716) Drop support for Go 1.8.
-* [#715](https://github.com/stripe/stripe-go/pull/715) Ship changes to the `PaymentIntent` resource to match the final layout.
-* [#717](https://github.com/stripe/stripe-go/pull/717) Add support for `flat_amount` on `Plan` tiers.
-* [#718](https://github.com/stripe/stripe-go/pull/718) Add support for `supported_transfer_countries` on `CountrySpec`.
-* [#720](https://github.com/stripe/stripe-go/pull/720) Add support for `review` on `PaymentIntent`.
-* [#707](https://github.com/stripe/stripe-go/pull/707) Add new invoice methods and fixes to the Issuing Cardholder resource (multiple breaking changes)
+* [#716](https://github.com/tabeo/stripe-go/pull/716) Drop support for Go 1.8.
+* [#715](https://github.com/tabeo/stripe-go/pull/715) Ship changes to the `PaymentIntent` resource to match the final layout.
+* [#717](https://github.com/tabeo/stripe-go/pull/717) Add support for `flat_amount` on `Plan` tiers.
+* [#718](https://github.com/tabeo/stripe-go/pull/718) Add support for `supported_transfer_countries` on `CountrySpec`.
+* [#720](https://github.com/tabeo/stripe-go/pull/720) Add support for `review` on `PaymentIntent`.
+* [#707](https://github.com/tabeo/stripe-go/pull/707) Add new invoice methods and fixes to the Issuing Cardholder resource (multiple breaking changes)
     * Move to API version 2018-11-08.
     * Add support for new API methods, properties and parameters for `Invoice`.
     * Add support for `default_source` on `Subscription` and `Invoice`.
 
 ## 52.1.0 - 2018-10-31
-* [#705](https://github.com/stripe/stripe-go/pull/705) Add support for the `Person` resource
-* [#706](https://github.com/stripe/stripe-go/pull/706) Add support for the `WebhookEndpoint` resource
+* [#705](https://github.com/tabeo/stripe-go/pull/705) Add support for the `Person` resource
+* [#706](https://github.com/tabeo/stripe-go/pull/706) Add support for the `WebhookEndpoint` resource
 
 ## 52.0.0 - 2018-10-29
-* [#711](https://github.com/stripe/stripe-go/pull/711) Set `Request.GetBody` when making requests
-* [#711](https://github.com/stripe/stripe-go/pull/711) Drop support for Go 1.7 (hasn't been supported by Go core since the release of Go 1.9 in August 2017)
+* [#711](https://github.com/tabeo/stripe-go/pull/711) Set `Request.GetBody` when making requests
+* [#711](https://github.com/tabeo/stripe-go/pull/711) Drop support for Go 1.7 (hasn't been supported by Go core since the release of Go 1.9 in August 2017)
 
 ## 51.4.0 - 2018-10-19
-* [#708](https://github.com/stripe/stripe-go/pull/708) Add Stripe Terminal endpoints to master to `client.API`
+* [#708](https://github.com/tabeo/stripe-go/pull/708) Add Stripe Terminal endpoints to master to `client.API`
 
 ## 51.3.0 - 2018-10-09
-* [#704](https://github.com/stripe/stripe-go/pull/704) Add support for `subscription_cancel_at_period_end` on the Upcoming Invoice API.
+* [#704](https://github.com/tabeo/stripe-go/pull/704) Add support for `subscription_cancel_at_period_end` on the Upcoming Invoice API.
 
 ## 51.2.0 - 2018-10-09
-* [#702](https://github.com/stripe/stripe-go/pull/702) Add support for `delivery_success` filter when listing Events.
+* [#702](https://github.com/tabeo/stripe-go/pull/702) Add support for `delivery_success` filter when listing Events.
 
 ## 51.1.0 - 2018-10-03
-* [#700](https://github.com/stripe/stripe-go/pull/700) Add support for `on_behalf_of` on Subscription and Charge resources.
+* [#700](https://github.com/tabeo/stripe-go/pull/700) Add support for `on_behalf_of` on Subscription and Charge resources.
 
 ## 51.0.0 - 2018-09-27
-* [#698](https://github.com/stripe/stripe-go/pull/698) Move to API version 2018-09-24
+* [#698](https://github.com/tabeo/stripe-go/pull/698) Move to API version 2018-09-24
     * Rename `FileUpload` to `File` (and all `FileUpload*` structs to `File*`)
 	* Fix file links client
 
 ## 50.0.0 - 2018-09-24
-* [#695](https://github.com/stripe/stripe-go/pull/695) Rename `Transaction` to `DisputedTransaction` in `IssuingDisputeParams` (minor breaking change)
-* [#695](https://github.com/stripe/stripe-go/pull/695) Add support for Stripe Terminal
+* [#695](https://github.com/tabeo/stripe-go/pull/695) Rename `Transaction` to `DisputedTransaction` in `IssuingDisputeParams` (minor breaking change)
+* [#695](https://github.com/tabeo/stripe-go/pull/695) Add support for Stripe Terminal
 
 ## 49.2.0 - 2018-09-24
-* [#697](https://github.com/stripe/stripe-go/pull/697) Fix `number` JSON tag on the `IssuingCardDetails` resource.
+* [#697](https://github.com/tabeo/stripe-go/pull/697) Fix `number` JSON tag on the `IssuingCardDetails` resource.
 
 ## 49.1.0 - 2018-09-11
-* [#694](https://github.com/stripe/stripe-go/pull/694) Add `ErrorCodeResourceMissing` error code constant
+* [#694](https://github.com/tabeo/stripe-go/pull/694) Add `ErrorCodeResourceMissing` error code constant
 
 ## 49.0.0 - 2018-09-11
-* [#693](https://github.com/stripe/stripe-go/pull/693) Change `Product` under `Plan` from a string to a full `Product` struct pointer (this is a minor breaking change -- upgrade by changing to `plan.Product.ID`)
+* [#693](https://github.com/tabeo/stripe-go/pull/693) Change `Product` under `Plan` from a string to a full `Product` struct pointer (this is a minor breaking change -- upgrade by changing to `plan.Product.ID`)
 
 ## 48.3.0 - 2018-09-06
-* [#691](https://github.com/stripe/stripe-go/pull/691) Add `InvoicePrefix` to `Customer` and `CustomerParams`
+* [#691](https://github.com/tabeo/stripe-go/pull/691) Add `InvoicePrefix` to `Customer` and `CustomerParams`
 
 ## 48.2.0 - 2018-09-05
-* [#690](https://github.com/stripe/stripe-go/pull/690) Add support for reporting resources
+* [#690](https://github.com/tabeo/stripe-go/pull/690) Add support for reporting resources
 
 ## 48.1.0 - 2018-09-05
-* [#683](https://github.com/stripe/stripe-go/pull/683) Add `StatusTransitions` filter parameters to `OrderListParams`
+* [#683](https://github.com/tabeo/stripe-go/pull/683) Add `StatusTransitions` filter parameters to `OrderListParams`
 
 ## 48.0.0 - 2018-09-05
-* [#681](https://github.com/stripe/stripe-go/pull/681) Handle deserialization of `OrderItem` parent into an object if expanded (minor breaking change)
+* [#681](https://github.com/tabeo/stripe-go/pull/681) Handle deserialization of `OrderItem` parent into an object if expanded (minor breaking change)
 
 ## 47.0.0 - 2018-09-04
 * New major version for better compatibility with Go's new module system (no breaking changes)
 
 ## 46.1.0 - 2018-09-04
-* [#688](https://github.com/stripe/stripe-go/pull/688) Encode `Params` in `AppendToAsSourceOrExternalAccount` (bug fix)
-* [#689](https://github.com/stripe/stripe-go/pull/689) Add `go.mod` for the new module system
+* [#688](https://github.com/tabeo/stripe-go/pull/688) Encode `Params` in `AppendToAsSourceOrExternalAccount` (bug fix)
+* [#689](https://github.com/tabeo/stripe-go/pull/689) Add `go.mod` for the new module system
 
 ## 46.0.0 - 2018-09-04
-* [#686](https://github.com/stripe/stripe-go/pull/686) Add `Mandate` and `Receiver` to `SourceObjectParams` and change `Date` on `SourceMandateAcceptance` to `int64` (minor breaking change)
+* [#686](https://github.com/tabeo/stripe-go/pull/686) Add `Mandate` and `Receiver` to `SourceObjectParams` and change `Date` on `SourceMandateAcceptance` to `int64` (minor breaking change)
 
 ## 45.0.0 - 2018-08-30
-* [#680](https://github.com/stripe/stripe-go/pull/680) Change `SubscriptionTaxPercent` on `Invoice` from `int64` to `float64` (minor breaking change)
+* [#680](https://github.com/tabeo/stripe-go/pull/680) Change `SubscriptionTaxPercent` on `Invoice` from `int64` to `float64` (minor breaking change)
 
 ## 44.0.0 - 2018-08-28
-* [#678](https://github.com/stripe/stripe-go/pull/678) Allow payment intent capture to take its own parameters
+* [#678](https://github.com/tabeo/stripe-go/pull/678) Allow payment intent capture to take its own parameters
 
 ## 43.1.1 - 2018-08-28
-* [#675](https://github.com/stripe/stripe-go/pull/675) Fix incorrectly encoded parameter in `UsageRecordSummaryListParams`
+* [#675](https://github.com/tabeo/stripe-go/pull/675) Fix incorrectly encoded parameter in `UsageRecordSummaryListParams`
 
 ## 43.1.0 - 2018-08-28
-* [#669](https://github.com/stripe/stripe-go/pull/669) Add `AuthorizationCode` to `Charge`
-* [#671](https://github.com/stripe/stripe-go/pull/671) Fix deserialization of `TaxID` on `CustomerTaxInfo`
+* [#669](https://github.com/tabeo/stripe-go/pull/669) Add `AuthorizationCode` to `Charge`
+* [#671](https://github.com/tabeo/stripe-go/pull/671) Fix deserialization of `TaxID` on `CustomerTaxInfo`
 
 ## 43.0.0 - 2018-08-23
-* [#668](https://github.com/stripe/stripe-go/pull/668) Move to API version 2018-08-23
+* [#668](https://github.com/tabeo/stripe-go/pull/668) Move to API version 2018-08-23
     * Add `TaxInfo` and `TaxInfoVerification` to `Customer`
 	* Rename `Amount` to `UnitAmount` on `PlanTierParams`
 	* Remove `BusinessVATID` from `Customer`
 	* Remove `AtPeriodEnd` from `SubscriptionCancelParams`
 
 ## 42.3.0 - 2018-08-23
-* [#667](https://github.com/stripe/stripe-go/pull/667) Add `Forgive` to `InvoicePayParams`
+* [#667](https://github.com/tabeo/stripe-go/pull/667) Add `Forgive` to `InvoicePayParams`
 
 ## 42.2.0 - 2018-08-22
-* [#666](https://github.com/stripe/stripe-go/pull/666) Add `Subscription` to `SubscriptionItem`
+* [#666](https://github.com/tabeo/stripe-go/pull/666) Add `Subscription` to `SubscriptionItem`
 
 ## 42.1.0 - 2018-08-22
-* [#664](https://github.com/stripe/stripe-go/pull/664) Add `AvailablePayoutMethods` to `Card`
+* [#664](https://github.com/tabeo/stripe-go/pull/664) Add `AvailablePayoutMethods` to `Card`
 
 ## 42.0.0 - 2018-08-20
-* [#663](https://github.com/stripe/stripe-go/pull/663) Add support for usage record summaries and rename `Live` on `IssuerFraudRecord, `SourceTransaction`, and `UsageRecord` to `Livemode` (a minor breaking change)
+* [#663](https://github.com/tabeo/stripe-go/pull/663) Add support for usage record summaries and rename `Live` on `IssuerFraudRecord, `SourceTransaction`, and `UsageRecord` to `Livemode` (a minor breaking change)
 
 ## 41.0.0 - 2018-08-17
-* [#659](https://github.com/stripe/stripe-go/pull/659) Remove mutating Bitcoin receiver API calls (these were no longer functional anyway)
-* [#661](https://github.com/stripe/stripe-go/pull/661) Correct `IssuingCardShipping`'s type to `int64`
-* [#662](https://github.com/stripe/stripe-go/pull/662) Rename `IssuingCardShipping`'s `Eta` to `ETA`
+* [#659](https://github.com/tabeo/stripe-go/pull/659) Remove mutating Bitcoin receiver API calls (these were no longer functional anyway)
+* [#661](https://github.com/tabeo/stripe-go/pull/661) Correct `IssuingCardShipping`'s type to `int64`
+* [#662](https://github.com/tabeo/stripe-go/pull/662) Rename `IssuingCardShipping`'s `Eta` to `ETA`
 
 ## 40.2.0 - 2018-08-15
-* [#657](https://github.com/stripe/stripe-go/pull/657) Use integer-indexed encoding for all arrays
+* [#657](https://github.com/tabeo/stripe-go/pull/657) Use integer-indexed encoding for all arrays
 
 ## 40.1.0 - 2018-08-10
-* [#656](https://github.com/stripe/stripe-go/pull/656) Expose new `ValidatePayload` functions for validating incoming payloads without constructing an event
+* [#656](https://github.com/tabeo/stripe-go/pull/656) Expose new `ValidatePayload` functions for validating incoming payloads without constructing an event
 
 ## 40.0.2 - 2018-08-07
-* [#652](https://github.com/stripe/stripe-go/pull/652) Change the type of `FileUpload.Links` to `FileLinkList` (this is a bug fix given that the previous type would never have worked)
+* [#652](https://github.com/tabeo/stripe-go/pull/652) Change the type of `FileUpload.Links` to `FileLinkList` (this is a bug fix given that the previous type would never have worked)
 
 ## 40.0.1 - 2018-08-07
-* [#653](https://github.com/stripe/stripe-go/pull/653) All `BackendImplementation`s should sleep by default on retries
+* [#653](https://github.com/tabeo/stripe-go/pull/653) All `BackendImplementation`s should sleep by default on retries
 
 ## 40.0.0 - 2018-08-06
-* [#648](https://github.com/stripe/stripe-go/pull/648) Introduce buffers so a request's body can be read multiple times (this modifies the interface of a few exported internal functions so it's technically breaking, but it will probably not be breaking for most users)
-* [#649](https://github.com/stripe/stripe-go/pull/649) Rename `BackendConfiguration` to `BackendImplementation` (likewise, technically breaking, but minor)
-* [#650](https://github.com/stripe/stripe-go/pull/650) Export `webhook.ComputeSignature`
+* [#648](https://github.com/tabeo/stripe-go/pull/648) Introduce buffers so a request's body can be read multiple times (this modifies the interface of a few exported internal functions so it's technically breaking, but it will probably not be breaking for most users)
+* [#649](https://github.com/tabeo/stripe-go/pull/649) Rename `BackendConfiguration` to `BackendImplementation` (likewise, technically breaking, but minor)
+* [#650](https://github.com/tabeo/stripe-go/pull/650) Export `webhook.ComputeSignature`
 
 ## 39.0.0 - 2018-08-04
-* [#646](https://github.com/stripe/stripe-go/pull/646) Set request body before every retry (this modifies the interface of a few exported internal functions so it's technically breaking, but it will probably not be breaking for most users)
+* [#646](https://github.com/tabeo/stripe-go/pull/646) Set request body before every retry (this modifies the interface of a few exported internal functions so it's technically breaking, but it will probably not be breaking for most users)
 
 ## 38.2.0 - 2018-08-03
-* [#644](https://github.com/stripe/stripe-go/pull/644) Add support for file links
-* [#645](https://github.com/stripe/stripe-go/pull/645) Add support for `Cancel` to topups
+* [#644](https://github.com/tabeo/stripe-go/pull/644) Add support for file links
+* [#645](https://github.com/tabeo/stripe-go/pull/645) Add support for `Cancel` to topups
 
 ## 38.1.0 - 2018-08-01
-* [#643](https://github.com/stripe/stripe-go/pull/643) Bug fix and various code/logging improvements to retry code
+* [#643](https://github.com/tabeo/stripe-go/pull/643) Bug fix and various code/logging improvements to retry code
 
 ## 38.0.0 - 2018-07-30
-* [#641](https://github.com/stripe/stripe-go/pull/641) Minor breaking changes to correct a few naming inconsistencies:
+* [#641](https://github.com/tabeo/stripe-go/pull/641) Minor breaking changes to correct a few naming inconsistencies:
     * `IdentityVerificationDetailsCodeScanIdCountryNotSupported` becomes `IdentityVerificationDetailsCodeScanIDCountryNotSupported`
     * `IdentityVerificationDetailsCodeScanIdTypeNotSupported` becomes `IdentityVerificationDetailsCodeScanIDTypeNotSupported`
     * `BitcoinUri` on `BitcoinReceiver` becomes `BitcoinURI`
     * `NetworkId` on `IssuingAuthorization` becomes `NetworkID`
 
 ## 37.0.0 - 2018-07-30
-* [#637](https://github.com/stripe/stripe-go/pull/637) Add support for Sigma scheduled query runs
-* [#639](https://github.com/stripe/stripe-go/pull/639) Move to API version `2018-07-27` (breaking)
+* [#637](https://github.com/tabeo/stripe-go/pull/637) Add support for Sigma scheduled query runs
+* [#639](https://github.com/tabeo/stripe-go/pull/639) Move to API version `2018-07-27` (breaking)
     * Remove `SKUs` from `Product`
     * Subscription creation and update can no longer take a source
     * Change `PercentOff` on coupon struct and params from integer to float
-* [#640](https://github.com/stripe/stripe-go/pull/640) Add missing field `Created` to `Account`
+* [#640](https://github.com/tabeo/stripe-go/pull/640) Add missing field `Created` to `Account`
 
 ## 36.3.0 - 2018-07-27
-* [#636](https://github.com/stripe/stripe-go/pull/636) Add `RiskScore` to `ChargeOutcome`
+* [#636](https://github.com/tabeo/stripe-go/pull/636) Add `RiskScore` to `ChargeOutcome`
 
 ## 36.2.0 - 2018-07-26
-* [#635](https://github.com/stripe/stripe-go/pull/635) Add support for Stripe Issuing
+* [#635](https://github.com/tabeo/stripe-go/pull/635) Add support for Stripe Issuing
 
 ## 36.1.2 - 2018-07-24
-* [#633](https://github.com/stripe/stripe-go/pull/633) Fix encoding of list params for bank accounts and cards
+* [#633](https://github.com/tabeo/stripe-go/pull/633) Fix encoding of list params for bank accounts and cards
 
 ## 36.1.1 - 2018-07-17
-* [#627](https://github.com/stripe/stripe-go/pull/627) Wire an `http.Client` from `NewBackends` through to backends
+* [#627](https://github.com/tabeo/stripe-go/pull/627) Wire an `http.Client` from `NewBackends` through to backends
 
 ## 36.1.0 - 2018-07-11
-* [#624](https://github.com/stripe/stripe-go/pull/624) Add `AutoAdvance` for `Invoice`
+* [#624](https://github.com/tabeo/stripe-go/pull/624) Add `AutoAdvance` for `Invoice`
 
 ## 36.0.0 - 2018-07-09
-* [#606](https://github.com/stripe/stripe-go/pull/606) Add support for payment intents
-* [#623](https://github.com/stripe/stripe-go/pull/623) Changed `Payout.Destination` from `string` to `*PayoutDestination` to support expanding (minor breaking change)
+* [#606](https://github.com/tabeo/stripe-go/pull/606) Add support for payment intents
+* [#623](https://github.com/tabeo/stripe-go/pull/623) Changed `Payout.Destination` from `string` to `*PayoutDestination` to support expanding (minor breaking change)
 
 ## 35.13.0 - 2018-07-06
-* [#622](https://github.com/stripe/stripe-go/pull/622) Correct position of `DeclineChargeOn` (it was added accidentally on `LegalEntityParams` when it should have been on `AccountParams`)
+* [#622](https://github.com/tabeo/stripe-go/pull/622) Correct position of `DeclineChargeOn` (it was added accidentally on `LegalEntityParams` when it should have been on `AccountParams`)
 
 ## 35.12.0 - 2018-07-05
-* [#620](https://github.com/stripe/stripe-go/pull/620) Add support for `Quantity` and `UnitAmount` to `InvoiceItemParams` and `Quantity` to `InvoiceItem`
+* [#620](https://github.com/tabeo/stripe-go/pull/620) Add support for `Quantity` and `UnitAmount` to `InvoiceItemParams` and `Quantity` to `InvoiceItem`
 
 ## 35.11.0 - 2018-07-05
-* [#618](https://github.com/stripe/stripe-go/pull/618) Add support for `DeclineChargeOn` to `Account` and `AccountParams`
+* [#618](https://github.com/tabeo/stripe-go/pull/618) Add support for `DeclineChargeOn` to `Account` and `AccountParams`
 
 ## 35.10.0 - 2018-07-04
-* [#616](https://github.com/stripe/stripe-go/pull/616) Adding missing clients to the `API` struct including a `UsageRecords` entry
+* [#616](https://github.com/tabeo/stripe-go/pull/616) Adding missing clients to the `API` struct including a `UsageRecords` entry
 
 ## 35.9.0 - 2018-07-03
-* [#611](https://github.com/stripe/stripe-go/pull/611) Introduce `GetBackendWithConfig` and make logging configurable per backend
+* [#611](https://github.com/tabeo/stripe-go/pull/611) Introduce `GetBackendWithConfig` and make logging configurable per backend
 
 ## 35.8.0 - 2018-06-28
-* [#607](https://github.com/stripe/stripe-go/pull/607) Add support for `PartnerID` from `stripe.SetAppInfo`
+* [#607](https://github.com/tabeo/stripe-go/pull/607) Add support for `PartnerID` from `stripe.SetAppInfo`
 
 ## 35.7.0 - 2018-06-26
-* [#604](https://github.com/stripe/stripe-go/pull/604) Add extra parameters `CustomerReference` and `ShippingFromZip` to `ChargeLevel3Params` and `ChargeLevel3`
+* [#604](https://github.com/tabeo/stripe-go/pull/604) Add extra parameters `CustomerReference` and `ShippingFromZip` to `ChargeLevel3Params` and `ChargeLevel3`
 
 ## 35.6.0 - 2018-06-25
-* [#603](https://github.com/stripe/stripe-go/pull/603) Add support for Level III data on charge creation
+* [#603](https://github.com/tabeo/stripe-go/pull/603) Add support for Level III data on charge creation
 
 ## 35.5.0 - 2018-06-22
-* [#601](https://github.com/stripe/stripe-go/pull/601) Add missing parameters for retrieving an upcoming invoice
+* [#601](https://github.com/tabeo/stripe-go/pull/601) Add missing parameters for retrieving an upcoming invoice
 
 ## 35.4.0 - 2018-06-21
-* [#599](https://github.com/stripe/stripe-go/pull/599) Add `ExchangeRate` to `BalanceTransaction`
+* [#599](https://github.com/tabeo/stripe-go/pull/599) Add `ExchangeRate` to `BalanceTransaction`
 
 ## 35.3.0 - 2018-06-20
-* [#596](https://github.com/stripe/stripe-go/pull/596) Add `Type` to `ProductListParams` so that products can be listed by type
+* [#596](https://github.com/tabeo/stripe-go/pull/596) Add `Type` to `ProductListParams` so that products can be listed by type
 
 ## 35.2.0 - 2018-06-19
-* [#595](https://github.com/stripe/stripe-go/pull/595) Add `Product` to `PlanListParams` so that plans can be listed by product
+* [#595](https://github.com/tabeo/stripe-go/pull/595) Add `Product` to `PlanListParams` so that plans can be listed by product
 
 ## 35.1.0 - 2018-06-17
-* [#592](https://github.com/stripe/stripe-go/pull/592) Add `Name` field to `Coupon` and `CouponParams`
+* [#592](https://github.com/tabeo/stripe-go/pull/592) Add `Name` field to `Coupon` and `CouponParams`
 
 ## 35.0.0 - 2018-06-15
-* [#557](https://github.com/stripe/stripe-go/pull/557) Add automatic retries for intermittent errors (enabling using `BackendConfiguration.SetMaxNetworkRetries`)
-* [#589](https://github.com/stripe/stripe-go/pull/589) Fix all `Get` methods to support standardized parameter structs + remove some deprecated functions
+* [#557](https://github.com/tabeo/stripe-go/pull/557) Add automatic retries for intermittent errors (enabling using `BackendConfiguration.SetMaxNetworkRetries`)
+* [#589](https://github.com/tabeo/stripe-go/pull/589) Fix all `Get` methods to support standardized parameter structs + remove some deprecated functions
 	* `IssuerFraudRecordListParams` now uses `*string` for `Charge` (set it using `stripe.String` like elsewhere)
 	* `event.Get` now takes `stripe.EventParams` instead of `Params` for consistency
 	* The `Get` method for `countryspec`, `exchangerate`, `issuerfraudrecord` now take an extra params struct parameter to be consistent and allow setting a connected account (use `stripe.CountrySpecParams`, `stripe.ExchangeRateParams`, and `IssuerFraudRecordParams`)
@@ -949,177 +949,177 @@ Version 71 of stripe-go contains some major changes. Many of them are breaking, 
 	* `loginlink.New` now properly passes its params struct into its API call
 
 ## 34.3.0 - 2018-06-14
-* [#587](https://github.com/stripe/stripe-go/pull/587) Use `net/http` constants instead of string literals for HTTP verbs (this is an internal cleanup and should not affect library behavior)
+* [#587](https://github.com/tabeo/stripe-go/pull/587) Use `net/http` constants instead of string literals for HTTP verbs (this is an internal cleanup and should not affect library behavior)
 
 ## 34.2.0 - 2018-06-14
-* [#581](https://github.com/stripe/stripe-go/pull/581) Push parameter encoding into `BackendConfiguration.Call` (this is an internal cleanup and should not affect library behavior)
+* [#581](https://github.com/tabeo/stripe-go/pull/581) Push parameter encoding into `BackendConfiguration.Call` (this is an internal cleanup and should not affect library behavior)
 
 ## 34.1.0 - 2018-06-13
-* [#586](https://github.com/stripe/stripe-go/pull/586) Add `AmountPaid`, `AmountRemaining`, `BillingReason` (including new `InvoiceBillingReason` and constants), and `SubscriptionProrationDate` to `Invoice`
+* [#586](https://github.com/tabeo/stripe-go/pull/586) Add `AmountPaid`, `AmountRemaining`, `BillingReason` (including new `InvoiceBillingReason` and constants), and `SubscriptionProrationDate` to `Invoice`
 
 ## 34.0.0 - 2018-06-12
-* [#585](https://github.com/stripe/stripe-go/pull/585) Remove `File` in favor of `FileUpload`, and consolidating both classes which were already nearly identical except `MIMEType` has been replaced by `Type` (this is technically a breaking change, but quite a small one)
+* [#585](https://github.com/tabeo/stripe-go/pull/585) Remove `File` in favor of `FileUpload`, and consolidating both classes which were already nearly identical except `MIMEType` has been replaced by `Type` (this is technically a breaking change, but quite a small one)
 
 ## 33.1.0 - 2018-06-12
-* [#578](https://github.com/stripe/stripe-go/pull/578) Improve expansion parsing by not discarding unmarshal errors
+* [#578](https://github.com/tabeo/stripe-go/pull/578) Improve expansion parsing by not discarding unmarshal errors
 
 ## 33.0.0 - 2018-06-11
-* [#583](https://github.com/stripe/stripe-go/pull/583) Add new account constants, rename one, and fix `DueBy` (this is technically a breaking change, but quite a small one)
+* [#583](https://github.com/tabeo/stripe-go/pull/583) Add new account constants, rename one, and fix `DueBy` (this is technically a breaking change, but quite a small one)
 
 ## 32.4.1 - 2018-06-11
-* [#582](https://github.com/stripe/stripe-go/pull/582) Fix unmarshaling of `LegalEntity` (specifically when we have `legal_entity[additional_owners][][verification]`) so that it comes out as a struct
+* [#582](https://github.com/tabeo/stripe-go/pull/582) Fix unmarshaling of `LegalEntity` (specifically when we have `legal_entity[additional_owners][][verification]`) so that it comes out as a struct
 
 ## 32.4.0 - 2018-06-07
-* [#577](https://github.com/stripe/stripe-go/pull/577) Add `DocumentBack` to account legal entity identity verification parameters and response
+* [#577](https://github.com/tabeo/stripe-go/pull/577) Add `DocumentBack` to account legal entity identity verification parameters and response
 
 ## 32.3.0 - 2018-06-07
-* [#576](https://github.com/stripe/stripe-go/pull/576) Fix plan transform usage to use `BucketSize` instead of `DivideBy`; note this is technically a breaking API change, but we've released it as a minor because the previous manifestation didn't work
+* [#576](https://github.com/tabeo/stripe-go/pull/576) Fix plan transform usage to use `BucketSize` instead of `DivideBy`; note this is technically a breaking API change, but we've released it as a minor because the previous manifestation didn't work
 
 ## 32.2.0 - 2018-06-06
-* [#571](https://github.com/stripe/stripe-go/pull/571) Add `HostedInvoiceURL` and `InvoicePDF` to `Invoice`
-* [#573](https://github.com/stripe/stripe-go/pull/573) Add `FormatURLPath` helper to allow safer URL path building
+* [#571](https://github.com/tabeo/stripe-go/pull/571) Add `HostedInvoiceURL` and `InvoicePDF` to `Invoice`
+* [#573](https://github.com/tabeo/stripe-go/pull/573) Add `FormatURLPath` helper to allow safer URL path building
 
 ## 32.1.0 - 2018-06-06
-* [#572](https://github.com/stripe/stripe-go/pull/572) Add `Active` to plan parameters and response
+* [#572](https://github.com/tabeo/stripe-go/pull/572) Add `Active` to plan parameters and response
 
 ## 32.0.1 - 2018-06-06
-* [#569](https://github.com/stripe/stripe-go/pull/569) Fix unmarshaling of expanded transaction sources in balance transactions
+* [#569](https://github.com/tabeo/stripe-go/pull/569) Fix unmarshaling of expanded transaction sources in balance transactions
 
 ## 32.0.0 - 2018-06-06
-* [#544](https://github.com/stripe/stripe-go/pull/544) **MAJOR** changes that make all fields on parameter structs pointers, and rename many fields on parameter and response structs to be consistent with naming in the REST API; we've written [a migration guide with complete details](https://github.com/stripe/stripe-go/blob/master/v32_migration_guide.md) to help with the upgrade
+* [#544](https://github.com/tabeo/stripe-go/pull/544) **MAJOR** changes that make all fields on parameter structs pointers, and rename many fields on parameter and response structs to be consistent with naming in the REST API; we've written [a migration guide with complete details](https://github.com/tabeo/stripe-go/blob/master/v32_migration_guide.md) to help with the upgrade
 
 ## 31.0.0 - 2018-06-06
-* [#566](https://github.com/stripe/stripe-go/pull/566) Support `DisputeParams` in `dispute.Close`
+* [#566](https://github.com/tabeo/stripe-go/pull/566) Support `DisputeParams` in `dispute.Close`
 
 ## 30.8.1 - 2018-05-24
-* [#562](https://github.com/stripe/stripe-go/pull/562) Add `go.mod` for vgo support
+* [#562](https://github.com/tabeo/stripe-go/pull/562) Add `go.mod` for vgo support
 
 ## 30.8.0 - 2018-05-22
-* [#558](https://github.com/stripe/stripe-go/pull/558) Add `SubscriptionItem` to `InvoiceLine`
+* [#558](https://github.com/tabeo/stripe-go/pull/558) Add `SubscriptionItem` to `InvoiceLine`
 
 ## 30.7.0 - 2018-05-09
-* [#552](https://github.com/stripe/stripe-go/pull/552) Add support for issuer fraud records
+* [#552](https://github.com/tabeo/stripe-go/pull/552) Add support for issuer fraud records
 
 ## 30.6.1 - 2018-05-04
-* [#550](https://github.com/stripe/stripe-go/pull/550) Append standard `Params` as well as card options when encoding `CardParams`
+* [#550](https://github.com/tabeo/stripe-go/pull/550) Append standard `Params` as well as card options when encoding `CardParams`
 
 ## 30.6.0 - 2018-04-17
-* [#546](https://github.com/stripe/stripe-go/pull/546) Add `SubParams.TrialFromPlan` and `SubItemsParams.ClearUsage`
+* [#546](https://github.com/tabeo/stripe-go/pull/546) Add `SubParams.TrialFromPlan` and `SubItemsParams.ClearUsage`
 
 ## 30.5.0 - 2018-04-09
-* [#543](https://github.com/stripe/stripe-go/pull/543) Support listing orders by customer (add `Customer` to `OrderListParams`)
+* [#543](https://github.com/tabeo/stripe-go/pull/543) Support listing orders by customer (add `Customer` to `OrderListParams`)
 
 ## 30.4.0 - 2018-04-06
-* [#541](https://github.com/stripe/stripe-go/pull/541) Add `Mandate` on `Source` (and associated mandate structs)
+* [#541](https://github.com/tabeo/stripe-go/pull/541) Add `Mandate` on `Source` (and associated mandate structs)
 
 ## 30.3.0 - 2018-04-02
-* [#538](https://github.com/stripe/stripe-go/pull/538) Introduce flexible billing primitives for subscriptions
+* [#538](https://github.com/tabeo/stripe-go/pull/538) Introduce flexible billing primitives for subscriptions
 
 ## 30.2.0 - 2018-03-23
-* [#535](https://github.com/stripe/stripe-go/pull/535) Add constant for redirect status `not_required` (`RedirectFlowStatusNotRequired`)
+* [#535](https://github.com/tabeo/stripe-go/pull/535) Add constant for redirect status `not_required` (`RedirectFlowStatusNotRequired`)
 
 ## 30.1.0 - 2018-03-17
-* [#534](https://github.com/stripe/stripe-go/pull/534) Add `AmountZero` to `InvoiceItemParams`
+* [#534](https://github.com/tabeo/stripe-go/pull/534) Add `AmountZero` to `InvoiceItemParams`
 
 ## 30.0.0 - 2018-03-14
-* [#533](https://github.com/stripe/stripe-go/pull/533) Make `DestPayment` under `Transfer` expandable by changing it from a string to a `Charge`
+* [#533](https://github.com/tabeo/stripe-go/pull/533) Make `DestPayment` under `Transfer` expandable by changing it from a string to a `Charge`
 
 ## 29.3.1 - 2018-03-08
-* [#530](https://github.com/stripe/stripe-go/pull/530) Fix mixed up types in `CountrySpec.SupportedBankAccountCurrencies`
+* [#530](https://github.com/tabeo/stripe-go/pull/530) Fix mixed up types in `CountrySpec.SupportedBankAccountCurrencies`
 
 ## 29.3.0 - 2018-03-01
-* [#527](https://github.com/stripe/stripe-go/pull/527) Add `MaidenName`, `PersonalIDNumber`, `PersonalIDNumberProvided` fields to `Owner` struct
+* [#527](https://github.com/tabeo/stripe-go/pull/527) Add `MaidenName`, `PersonalIDNumber`, `PersonalIDNumberProvided` fields to `Owner` struct
 
 ## 29.2.0 - 2018-02-26
-* [#525](https://github.com/stripe/stripe-go/pull/525) Support shipping carrier and tracking number in orders
-* [#526](https://github.com/stripe/stripe-go/pull/526) Fix ignored `commonParams` when returning an order
+* [#525](https://github.com/tabeo/stripe-go/pull/525) Support shipping carrier and tracking number in orders
+* [#526](https://github.com/tabeo/stripe-go/pull/526) Fix ignored `commonParams` when returning an order
 
 ## 29.1.1 - 2018-02-21
-* [#522](https://github.com/stripe/stripe-go/pull/522) Bump API version and fix creating plans with a product
+* [#522](https://github.com/tabeo/stripe-go/pull/522) Bump API version and fix creating plans with a product
 
 ## 29.1.0 - 2018-02-21
-* [#520](https://github.com/stripe/stripe-go/pull/520) Add support for topups
+* [#520](https://github.com/tabeo/stripe-go/pull/520) Add support for topups
 
 ## 29.0.1 - 2018-02-16
 **WARNING:** Please use 29.1.1 instead.
-* [#519](https://github.com/stripe/stripe-go/pull/519) Correct the implementation of `PaymentSource.MarshalJSON` to also handle bank account sources
+* [#519](https://github.com/tabeo/stripe-go/pull/519) Correct the implementation of `PaymentSource.MarshalJSON` to also handle bank account sources
 
 ## 29.0.0 - 2018-02-14
 **WARNING:** Please use 29.1.1 instead.
-* [#518](https://github.com/stripe/stripe-go/pull/518) Bump API version to 2018-02-06 and add support for Product & Plan API
+* [#518](https://github.com/tabeo/stripe-go/pull/518) Bump API version to 2018-02-06 and add support for Product & Plan API
 
 ## 28.12.0 - 2018-02-09
-* [#517](https://github.com/stripe/stripe-go/pull/517) Add `BillingCycleAnchor` to `Sub` and `BillingCycleAnchorUnchanged` to `SubParams`
+* [#517](https://github.com/tabeo/stripe-go/pull/517) Add `BillingCycleAnchor` to `Sub` and `BillingCycleAnchorUnchanged` to `SubParams`
 
 ## 28.11.0 - 2018-01-29
-* [#516](https://github.com/stripe/stripe-go/pull/516) Add `AmountZero` to `PlanParams` to it's possible to send zero values when creating or updating a plan
+* [#516](https://github.com/tabeo/stripe-go/pull/516) Add `AmountZero` to `PlanParams` to it's possible to send zero values when creating or updating a plan
 
 ## 28.10.1 - 2018-01-18
-* [#512](https://github.com/stripe/stripe-go/pull/512) Encode empty values found in maps (like `Meta`)
+* [#512](https://github.com/tabeo/stripe-go/pull/512) Encode empty values found in maps (like `Meta`)
 
 ## 28.10.0 - 2018-01-09
-* [#509](https://github.com/stripe/stripe-go/pull/509) Plumb through additional possible errors when unmarshaling polymorphic types (please test your integrations while upgrading)
+* [#509](https://github.com/tabeo/stripe-go/pull/509) Plumb through additional possible errors when unmarshaling polymorphic types (please test your integrations while upgrading)
 
 ## 28.9.0 - 2018-01-08
-* [#506](https://github.com/stripe/stripe-go/pull/506) Add support for recursing into slices in `event.GetObjValue`
+* [#506](https://github.com/tabeo/stripe-go/pull/506) Add support for recursing into slices in `event.GetObjValue`
 
 ## 28.8.0 - 2017-12-12
-* [#500](https://github.com/stripe/stripe-go/pull/500) Support sharing for bank accounts and cards (adds `ID` field to bank account and charge parameters)
+* [#500](https://github.com/tabeo/stripe-go/pull/500) Support sharing for bank accounts and cards (adds `ID` field to bank account and charge parameters)
 
 ## 28.7.0 - 2017-12-05
-* [#494](https://github.com/stripe/stripe-go/pull/494) Add `Automatic` to `Payout` struct
+* [#494](https://github.com/tabeo/stripe-go/pull/494) Add `Automatic` to `Payout` struct
 
 ## 28.6.1 - 2017-11-02
-* [#492](https://github.com/stripe/stripe-go/pull/492) Correct name of user agent header used to send Go version to Stripe's API
+* [#492](https://github.com/tabeo/stripe-go/pull/492) Correct name of user agent header used to send Go version to Stripe's API
 
 ## 28.6.0 - 2017-10-31
-* [#491](https://github.com/stripe/stripe-go/pull/491) Support for exchange rates APIs
+* [#491](https://github.com/tabeo/stripe-go/pull/491) Support for exchange rates APIs
 
 ## 28.5.0 - 2017-10-27
-* [#488](https://github.com/stripe/stripe-go/pull/488) Support for listing source transactions
+* [#488](https://github.com/tabeo/stripe-go/pull/488) Support for listing source transactions
 
 ## 28.4.2 - 2017-10-25
-* [#486](https://github.com/stripe/stripe-go/pull/486) Send the required `object=bank_account` parameter when adding a bank account through an account
-* [#487](https://github.com/stripe/stripe-go/pull/487) Make bank account's `account_holder_name` and `account_holder_type` parameters truly optional
+* [#486](https://github.com/tabeo/stripe-go/pull/486) Send the required `object=bank_account` parameter when adding a bank account through an account
+* [#487](https://github.com/tabeo/stripe-go/pull/487) Make bank account's `account_holder_name` and `account_holder_type` parameters truly optional
 
 ## 28.4.1 - 2017-10-24
-* [#484](https://github.com/stripe/stripe-go/pull/484) Error early when params not specified for card-related API calls
+* [#484](https://github.com/tabeo/stripe-go/pull/484) Error early when params not specified for card-related API calls
 
 ## 28.4.0 - 2017-10-19
-* [#477](https://github.com/stripe/stripe-go/pull/477) Support context on API requests with `Params.Context` and `ListParams.Context`
+* [#477](https://github.com/tabeo/stripe-go/pull/477) Support context on API requests with `Params.Context` and `ListParams.Context`
 
 ## 28.3.2 - 2017-10-19
-* [#479](https://github.com/stripe/stripe-go/pull/479) Pass token in only one of `external_account` *or* source when appending card
+* [#479](https://github.com/tabeo/stripe-go/pull/479) Pass token in only one of `external_account` *or* source when appending card
 
 ## 28.3.1 - 2017-10-17
-* [#476](https://github.com/stripe/stripe-go/pull/476) Make initializing new backends concurrency-safe
+* [#476](https://github.com/tabeo/stripe-go/pull/476) Make initializing new backends concurrency-safe
 
 ## 28.3.0 - 2017-10-10
-* [#359](https://github.com/stripe/stripe-go/pull/359) Add support for verify sources (added `Values` on `SourceVerifyParams`)
+* [#359](https://github.com/tabeo/stripe-go/pull/359) Add support for verify sources (added `Values` on `SourceVerifyParams`)
 
 ## 28.2.0 - 2017-10-09
-* [#472](https://github.com/stripe/stripe-go/pull/472) Add support for `statement_descriptor` in source objects
-* [#473](https://github.com/stripe/stripe-go/pull/473) Add support for detaching sources from customers
+* [#472](https://github.com/tabeo/stripe-go/pull/472) Add support for `statement_descriptor` in source objects
+* [#473](https://github.com/tabeo/stripe-go/pull/473) Add support for detaching sources from customers
 
 ## 28.1.0 - 2017-10-05
-* [#471](https://github.com/stripe/stripe-go/pull/471) Add support for `RedirectFlow.FailureReason` for sources
+* [#471](https://github.com/tabeo/stripe-go/pull/471) Add support for `RedirectFlow.FailureReason` for sources
 
 ## 28.0.1 - 2017-10-03
-* [#468](https://github.com/stripe/stripe-go/pull/468) Fix encoding of pointer-based scalars (e.g. `Active *bool` in `Product`)
-* [#470](https://github.com/stripe/stripe-go/pull/470) Fix concurrent race in `form` package's encoding caches
+* [#468](https://github.com/tabeo/stripe-go/pull/468) Fix encoding of pointer-based scalars (e.g. `Active *bool` in `Product`)
+* [#470](https://github.com/tabeo/stripe-go/pull/470) Fix concurrent race in `form` package's encoding caches
 
 ## 28.0.0 - 2017-09-27
-* [#467](https://github.com/stripe/stripe-go/pull/467) Change `Product.Get` to include `ProductParams` for request metadata
-* [#467](https://github.com/stripe/stripe-go/pull/467) Fix sending extra parameters on product and SKU requests
+* [#467](https://github.com/tabeo/stripe-go/pull/467) Change `Product.Get` to include `ProductParams` for request metadata
+* [#467](https://github.com/tabeo/stripe-go/pull/467) Fix sending extra parameters on product and SKU requests
 
 ## 27.0.2 - 2017-09-26
-* [#465](https://github.com/stripe/stripe-go/pull/465) Fix encoding of `CVC` parameter in `CardParams`
+* [#465](https://github.com/tabeo/stripe-go/pull/465) Fix encoding of `CVC` parameter in `CardParams`
 
 ## 27.0.1 - 2017-09-20
-* [#461](https://github.com/stripe/stripe-go/pull/461) Fix encoding of `TypeData` under sources
+* [#461](https://github.com/tabeo/stripe-go/pull/461) Fix encoding of `TypeData` under sources
 
 ## 27.0.0 - 2017-09-19
-* [#458](https://github.com/stripe/stripe-go/pull/458) Remove `ChargeParams.Token` (this seems like it was added accidentally)
+* [#458](https://github.com/tabeo/stripe-go/pull/458) Remove `ChargeParams.Token` (this seems like it was added accidentally)
 
 ## 26.0.0 - 2017-09-17
 * Introduce `form` package so it's no longer necessary to build conditional structures to encode parameters -- this may result in parameters that were set but previously not encoded to now be encoded so **PLEASE TEST CAREFULLY WHEN UPGRADING**!

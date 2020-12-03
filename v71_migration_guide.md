@@ -8,8 +8,8 @@ The library now fully supports [Go Modules](https://github.com/golang/go/wiki/Mo
 
 ``` go
 import (
-    "github.com/stripe/stripe-go"
-    "github.com/stripe/stripe-go/customer"
+    "github.com/tabeo/stripe-go"
+    "github.com/tabeo/stripe-go/customer"
 )
 ```
 
@@ -17,8 +17,8 @@ Should now also include a major version:
 
 ``` go
 import (
-    "github.com/stripe/stripe-go/v71"
-    "github.com/stripe/stripe-go/v71/customer"
+    "github.com/tabeo/stripe-go/v71"
+    "github.com/tabeo/stripe-go/v71/customer"
 )
 ```
 
@@ -129,8 +129,8 @@ stripe.DefaultLeveledLogger = &stripe.LeveledLogger{
 
 ## Other API changes
 
-* [#1052](https://github.com/stripe/stripe-go/pull/1052) Beta features have been removed from Issuing APIs
-* [#1068](https://github.com/stripe/stripe-go/pull/1068) Other breaking API changes
+* [#1052](https://github.com/tabeo/stripe-go/pull/1052) Beta features have been removed from Issuing APIs
+* [#1068](https://github.com/tabeo/stripe-go/pull/1068) Other breaking API changes
     * `PaymentIntent` is now expandable on `Charge`
     * `Percentage` was removed as a filter when listing `TaxRate`
     * Removed `RenewalInterval` on `SubscriptionSchedule`

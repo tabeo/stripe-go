@@ -139,7 +139,7 @@ Please see the list below for the complete set of changes.
 As usual, if you find bugs, please [open them on the repository][issues], or
 reach out to `support@stripe.com` if you have any other questions.
 
-[issues]: https://github.com/stripe/stripe-go/issues/new
+[issues]: https://github.com/tabeo/stripe-go/issues/new
 
 <!--
 # vim: set tw=79:
