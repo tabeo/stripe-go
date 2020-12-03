@@ -4,9 +4,9 @@ package session
 import (
 	"net/http"
 
-	stripe "github.com/stripe/stripe-go/v71"
-	"github.com/stripe/stripe-go/v71/form"
-	"github.com/stripe/stripe-go/v71/lineitem"
+	stripe "github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/form"
+	"github.com/tabeo/stripe-go/lineitem"
 )
 
 // Client is used to invoke /checkout_sessions APIs.

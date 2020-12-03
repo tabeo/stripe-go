@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stripe/stripe-go/v71/form"
+	"github.com/tabeo/stripe-go/form"
 )
 
 //

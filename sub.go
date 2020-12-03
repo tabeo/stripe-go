@@ -3,7 +3,7 @@ package stripe
 import (
 	"encoding/json"
 
-	"github.com/stripe/stripe-go/v71/form"
+	"github.com/tabeo/stripe-go/form"
 )
 
 // SubscriptionStatus is the list of allowed values for the subscription's status.

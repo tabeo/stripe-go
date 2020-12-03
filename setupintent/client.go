@@ -6,8 +6,8 @@ package setupintent
 import (
 	"net/http"
 
-	stripe "github.com/stripe/stripe-go/v71"
-	"github.com/stripe/stripe-go/v71/form"
+	stripe "github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/form"
 )
 
 // Client is used to invoke APIs related to setup intents.

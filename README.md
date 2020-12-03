@@ -19,8 +19,8 @@ Then, reference stripe-go in a Go program with `import`:
 
 ``` go
 import (
-    "github.com/stripe/stripe-go/v71"
-    "github.com/stripe/stripe-go/v71/customer"
+    "github.com/tabeo/stripe-go"
+    "github.com/tabeo/stripe-go/customer"
 )
 ```
 
@@ -30,7 +30,7 @@ toolchain will resolve and fetch the stripe-go module automatically.
 Alternatively, you can also explicitly `go get` the package into a project:
 
 ```
-go get -u github.com/stripe/stripe-go/v71
+go get -u github.com/tabeo/stripe-go
 ```
 
 ## Documentation
@@ -119,8 +119,8 @@ To use a key, pass it to `API`'s `Init` function:
 ```go
 
 import (
-	"github.com/stripe/stripe-go/v71"
-	"github.com/stripe/stripe-go/v71/client"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/client"
 )
 
 stripe := &client.API{}
@@ -141,8 +141,8 @@ import (
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/urlfetch"
 
-	"github.com/stripe/stripe-go/v71"
-	"github.com/stripe/stripe-go/v71/client"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/client"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -176,8 +176,8 @@ client.
 
 ```go
 import (
-	"github.com/stripe/stripe-go/v71"
-	"github.com/stripe/stripe-go/v71/$resource$"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/$resource$"
 )
 
 // Setup
@@ -216,8 +216,8 @@ individual key.
 
 ```go
 import (
-	"github.com/stripe/stripe-go/v71"
-	"github.com/stripe/stripe-go/v71/client"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/client"
 )
 
 // Setup
@@ -288,8 +288,8 @@ with `MaxNetworkRetries`:
 
 ```go
 import (
-	"github.com/stripe/stripe-go/v71"
-	"github.com/stripe/stripe-go/v71/client"
+	"github.com/tabeo/stripe-go"
+	"github.com/tabeo/stripe-go/client"
 )
 
 config := &stripe.BackendConfig{
